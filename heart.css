@@ -1,0 +1,122 @@
+body {
+
+    background-color: black;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.Love {
+
+    position: relative;
+    width: 50px;
+
+    height: 50px;
+
+}
+
+p::after {
+
+    position: absolute;
+
+    width: 50px;
+
+    height: 50px;
+
+    content: 'I Love';
+
+    color: #000000;
+
+    font-size: 8px;
+
+    font-weight: bolder;
+
+    top: 10px;
+
+    left: 1px;
+
+    transition: all .5s ease-in-out;
+
+}
+
+.love span {
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 30px;
+    background-color: #00dd5f;
+
+
+
+    transition: all .5s ease-in-out;
+}
+
+.love input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.love input:checked-span:nth-child(2) {
+
+    background-color: #d40000;
+    border-radius: 50%;
+
+    left: 0;
+
+    z-index: 1;
+    animation: effects .5s linear alternate;
+}
+
+.love input:checked-span:nth-child(3) {
+    background-color: #d40000;
+
+    border-radius: 50%;
+    left: 20px;
+
+    z-index: 1;
+
+    animation: effects .5s linear alternate;
+}
+
+.love input:checked-span:nth-child(4) {
+
+    background-color: #040000;
+    left: 10px;
+
+    top: 10px;
+
+    transform: rotate(45deg);
+    animation: effects .5s linear;
+
+}
+
+.love input:checked-p:after {
+
+    content: 'You';
+
+    color: #fff;
+
+    letter-spacing: 3px;
+    z-index: 1;
+    top: 15px;
+    left: 13px;
+}
+
+@keyframes effects {
+
+
+
+    100%{transform: rotate(360deg);}
+    }

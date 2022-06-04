@@ -1,0 +1,51 @@
+* {
+     margin: 0;
+     padding: 0;
+
+}
+
+body {
+     /* background-image: url('mac-taskbar-win11.png'); */
+     background-size: cover;
+     overflow: hidden;
+     height: 100vh;
+
+}
+
+.taskbar {
+     width: 100%;
+     background-color: #e1e9f4;
+     position: absolute;
+     bottom: 0px;
+     display: flex;
+     justify-content: center;
+     z-index: 1;
+
+}
+
+.startmenu {
+     position: absolute;
+     bottom: -650px;
+     width: 100%;
+     text-align: center;
+     transition: all 0.5s ease-in;
+
+}
+
+.startmenu img {
+     border-radius: 8px;
+
+}
+
+.right {
+     position: absolute;
+     right: 0;
+}
+
+.icons {
+
+     display: flex;
+     flex-direction: column;
+     font-size: 90%;
+     justify-content: center;
+}

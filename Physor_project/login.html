@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="physorLogo.jpg" type="image/x-icon">
+     <title>Log in</title>
+
+
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+     <link rel="stylesheet" href="assets/parallax/jarallax.css">
+     <link rel="stylesheet" href="assets/dropdown/css/style.css">
+     <link rel="stylesheet" href="assets/socicon/css/styles.css">
+     <link rel="stylesheet" href="assets/theme/css/style.css">
+     <link rel="stylesheet" href="physorstyle.css">
+     <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet' ">
+     <!--  -->
+     <noscript>
+          <link rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+     </noscript>
+     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+     <style>
+          body {
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+          form {
+               border: 3px solid #f1f1f1;
+               /* padding-left: 20px;
+               padding-right: 20px; */
+               /* padding-top: 10%; */
+               position: absolute;
+
+               width: 100%;
+               height: 90%;
+               border-radius: 10px;
+
+               box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+                    inset 5px 5px 10px rgba(255, 255, 255, 0.5),
+                    inset 5px 5px 20px rgba(207, 205, 205, 0.2),
+                    inset -5px -5px 15px rgba(141, 147, 166, 0.75);
+          }
+
+          input[type=text],
+          input[type=password] {
+               width: 80%;
+               padding: 12px 20px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box;
+          }
+
+          button {
+               background-color: #04AA6D;
+               color: white;
+               padding: 14px 20px;
+               margin: 8px 0;
+               border: none;
+               cursor: pointer;
+               width: 100%;
+          }
+
+          button:hover {
+               opacity: 0.8;
+          }
+
+          .cancelbtn {
+               width: auto;
+               padding: 10px 18px;
+               background-color: #f44336;
+          }
+
+
+
+          .container {
+               padding: 16px;
+          }
+
+          span.psw {
+               float: right;
+               padding-top: 16px;
+          }
+
+          /* Change styles for span and cancel button on extra small screens */
+          @media screen and (max-width: 300px) {
+               span.psw {
+                    display: block;
+                    float: none;
+               }
+
+               .cancelbtn {
+                    width: 100%;
+               }
+          }
+     </style>
+
+</head>
+
+<body>
+     <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
+
+          <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+               <div class="container-fluid">
+                    <div class="navbar-brand">
+                         <span class="navbar-logo">
+                              <a href="Landingpage.html">
+                                   <img src="physorLogo.jpg" alt="PHYSOR" style="height: 4.9rem;">
+                              </a>
+                         </span>
+                    </div>
+               </div>
+          </nav>
+
+     </section>
+     <div class="" style="padding-left: 20px;padding-top: 10%; position: absolute; margin-left: 0%; width: 100%; height: 100%;  border-radius: 10px;
+          border-spacing: 4px;
+          ">
+
+          <h2>Login Form</h2>
+
+          <form action="/action_page.php" method="post">
+
+               <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" style="width: 20%; margin-left: 95px">Login</button>
+
+               </div>
+
+               <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+               </div>
+          </form>
+
+     </div>
+
+
+</body>
+
+</html>

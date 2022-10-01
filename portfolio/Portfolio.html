@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <style>
+          @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+
+
+          body {
+               background: conic-gradient(rgb(10, 9, 9) 90deg,
+                         rgba(43, 29, 91, 0.539) 90deg 180deg,
+                         rgb(0, 0, 0) 180deg 270deg,
+                         rgba(78, 89, 103, 0.845) 270deg)top left / 3px 3px repeat;
+               display: flex;
+               flex-direction: column;
+
+          }
+
+
+          .name {
+
+               display: flex;
+               color: rgb(222, 222, 241);
+               font-size: 6ex;
+               font-style: oblique;
+               font-family: "Raleway";
+          }
+
+
+          .bt {
+
+               width: 100px;
+               background: transparent;
+               font-size: 2.5ex;
+
+               position: relative;
+               flex: 1 1 180px;
+
+
+               margin-bottom: 40px;
+
+
+
+          }
+
+
+
+
+
+
+          .menu {
+               display: flex;
+               flex-direction: row;
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+          }
+
+          .menu>li {
+               margin: 0 1rem;
+               overflow: hidden;
+          }
+
+          .menu-button-container {
+               display: none;
+               height: 100%;
+               width: 30px;
+               cursor: pointer;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+
+          #menu-toggle {
+               display: none;
+          }
+
+          .menu-button,
+          .menu-button::before,
+          .menu-button::after {
+               display: block;
+               background-color: #fff;
+               position: absolute;
+               height: 4px;
+               width: 30px;
+               transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+               border-radius: 2px;
+          }
+
+          .menu-button::before {
+               content: '';
+               margin-top: -8px;
+          }
+
+          .menu-button::after {
+               content: '';
+               margin-top: 8px;
+          }
+
+          #menu-toggle:checked+.menu-button-container .menu-button::before {
+               margin-top: 0px;
+               transform: rotate(405deg);
+          }
+
+          #menu-toggle:checked+.menu-button-container .menu-button {
+               background: rgba(255, 255, 255, 0);
+          }
+
+          #menu-toggle:checked+.menu-button-container .menu-button::after {
+               margin-top: 0px;
+               transform: rotate(-405deg);
+          }
+
+          @media (max-width: 716px) {
+               .name {
+
+                    font-size: 3ex;
+
+               }
+
+               .menu-button-container {
+                    display: flex;
+               }
+
+               .menu {
+                    position: absolute;
+                    top: 0;
+                    margin-top: 50px;
+                    left: 0;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+               }
+
+               #menu-toggle~.menu li {
+                    height: 0;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+               }
+
+               #menu-toggle:checked~.menu li {
+                    border: 1px solid #333;
+                    height: 2.5em;
+                    padding: 0.5em;
+                    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+               }
+
+               .menu>li {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0.5em 0;
+                    width: 100%;
+                    color: white;
+                    background-color: #222;
+               }
+
+               .menu>li:not(:last-child) {
+                    border-bottom: 1px solid #444;
+               }
+          }
+
+          @media (max-width: 716px) {
+               .pic img {
+                    display: none;
+               }
+
+
+               .btn {
+                    /* margin-left: 7%; */
+                    width: 100px;
+                    background: whitesmoke;
+                    /* font-size: 3ex; */
+                    border-radius: 50px;
+                    z-index: 1;
+
+
+
+
+
+               }
+
+               * {
+                    font-family: "Raleway";
+                    box-sizing: border-box;
+               }
+
+          }
+
+          .para {
+               position: relative;
+               flex: 1 1 200px;
+               /* width: 98%; */
+
+               margin-bottom: 40px;
+               margin-right: 2.2ex;
+
+               padding-left: 4px;
+               padding-right: 4px;
+               margin-left: 2px;
+               margin-right: 2px;
+               border: 2px solid rgba(0, 0, 0, 0.368);
+               border-radius: 50px;
+               border: 1px solid rgb(84, 74, 74);
+               box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+                    inset 5px 5px 10px rgba(255, 255, 255, 0.5),
+                    inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+                    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+               border-spacing: 4px;
+               margin: auto;
+               padding: 25px;
+
+
+               justify-content: center;
+               align-items: center;
+          }
+
+          .pic {
+               /* display: inline-block; */
+               display: flex;
+               flex-wrap: wrap;
+               flex-direction: row;
+               box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.25),
+                    inset 5px 5px 7px rgba(255, 255, 255, 0.5),
+                    inset 5px 5px 7px rgba(0, 0, 0, 0.2),
+                    inset -5px -5px 300px rgba(0, 0, 0, 0.75);
+               border-spacing: 4px;
+               border-radius: 50px;
+          }
+
+          .pic img {
+               display: inline;
+               padding-left: 3.9ex;
+               padding-right: 2.2ex;
+               padding-top: 2.2ex;
+               padding-bottom: 2.2ex;
+
+               /* height: 46%;
+               width: 36%; */
+          }
+
+          .p {
+               /* display: block; */
+               padding-left: 3rem;
+               color: antiquewhite;
+
+
+          }
+
+          .p h1 {
+               color: antiquewhite;
+               width: 100%;
+          }
+
+          #picname {
+               display: flex;
+               flex-direction: column;
+          }
+
+          .navbar {
+               background: rgba(48, 43, 54, 0.657);
+
+               position: sticky;
+
+               width: 98%;
+
+               /* border: 2px solid red; */
+               display: flex;
+               border-radius: 46px;
+
+               flex-direction: row;
+               align-items: center;
+               justify-content: space-between;
+               height: 5rem;
+               padding: 1em;
+               margin-right: 2em;
+
+          }
+
+          #home {
+               z-index: -1;
+          }
+
+          h3 {
+
+               color: rgba(245, 245, 245, 0.738);
+               padding-left: 3ex;
+               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+
+
+          .range-wrap {
+               position: relative;
+               margin: 0 auto 3rem;
+          }
+
+          .range {
+               width: 100%;
+          }
+
+          .bubble {
+               background: red;
+               color: white;
+               padding: 4px 12px;
+               position: absolute;
+               border-radius: 4px;
+               left: 50%;
+               transform: translateX(-50%);
+          }
+
+          .bubble::after {
+               content: "";
+               position: absolute;
+               width: 2px;
+               height: 2px;
+               background: red;
+               top: -1px;
+               left: 50%;
+          }
+
+          body {
+               margin: 2rem;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="navbar">
+          <div class="name"><b> Tejasmaya Sitha </b><br> </div>
+
+
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+               <div class='menu-button'></div>
+          </label>
+          <ul class="menu">
+               <li><a href="#home"><button class="btn ">
+                              Home
+
+                         </button></a></li>
+               <li>
+                    <a href="#about">
+
+                         <button class="btn ">
+                              About me
+
+                         </button> </a>
+               </li>
+               <li><a href="#works"><button class="btn ">
+                              My works
+
+                         </button></a></li>
+               <li><a href="#contact"><button class="btn ">
+                              Contact me
+
+                         </button></a></li>
+
+          </ul>
+
+
+
+
+     </div>
+
+     <div id="home" class="para">
+          <div class="pic">
+               <a href="https://physorr.w3spaces.com/Krishna/Tej1.jpg">
+                    <img src=" https://physorr.w3spaces.com/Krishna/Tej1.jpg" style="height: 100%; width: 100%;"
+                         alt="profile_image">
+                    <!-- <img src="Tej1.jpg" alt="profile_image"> -->
+               </a>
+
+               <div id="picname">
+
+
+                    <h1
+                         style="color: rgba(245, 245, 245, 0.738);padding-left: 2ex; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">
+                         Tejasmaya Sitha <br> </h1>
+                    <h2
+                         style="color: rgba(245, 245, 245, 0.738); padding-left: 3ex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                         Student of Rajendra University, Balangir</h2><br><br><br>
+                    <h3
+                         style="color: rgba(245, 245, 245, 0.738); padding-left: 3ex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                         Department of Computer Science (2019-2022)</h3>
+                    <h3
+                         style="color: rgba(245, 245, 245, 0.738); padding-left: 3ex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                         Pursuing Graduation <br>
+                         GPA : 8.55 <br><br></h3>
+
+
+
+               </div>
+               <div class="pic" style="padding: 2rem; ">
+                    <br>
+                    <h3>
+
+                         Objective: <br> <br> Seeking opportunity to make a responsible career to
+                         fully utilize my
+                         training, knowledge, and skills, while
+                         making a significant contribution to the success of the company. To secure a competent
+                         position
+                         in a
+                         reputable organization to expand my learnings, knowledge, and skills.
+                    </h3>
+
+               </div>
+
+
+
+          </div>
+
+          <br>
+          <br>
+
+     </div>
+     <div id="about" class="para">
+          <br>
+          <br>
+          <h1
+               style="color: rgba(245, 245, 245, 0.738); padding-left: 3ex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 220%;">
+               <b><strong>About Me</strong></b>
+          </h1>
+          <div class="pic">
+               <h3>
+                    <center>
+
+                         Myself Tejasmaya, Student of Rajendra University Bolangir. Currently
+                         Pursuing Bachelors in Science <br> with Computer Science Mains.
+                         I'm in Rajendra University from 2019 and my Graduation is sheduled to <br>
+                         complete in August 2022. Thereafter I'm willing to get a good job as per my
+                         qualifications <br> in any reputable organisation to expand my knowledge and skills along with
+                         works.
+
+                         <br><br>
+                         I believe I have Team leading capability. I can constitute a <br> good team member. I am a
+                         Quick learner and believe in both Hard and smart work.
+                         <br><br>
+                         I'm From Bijepur, Dist. Bargarh, Odisha. I completed my schooling in <br> S S vidya Mandir,
+                         Bijepur.
+                         I was Born in Barpali later I moved to Bijepur, which is <br> my current and permanent address.
+                         <br><br>
+                         My hobbies include listening music, playing Games, reading, <br>
+                         scientific research and Curiosity in Astronomy.
+                         <br>
+                         I'm Fluent in Odia, English and Hindi.(both verbal and written).
+                         <br>
+                         <br>
+                         <br>
+                    </center>
+                    Academic background: <br><br>
+                    <center>
+                         I Completed my matriculation in 2016 from Saraswati Sishu Vidya Mandir, Bijepur. <br> I secured
+                         78 % in
+                         10th and then I started my Intermediate(12th) studies in <br>
+                         Bijepur College, Bijepur. I was from Science Stream with Physics, <br>
+                         Chemistry, Maths and Information Technology subjects. Language <br>
+                         subjects were English and Odia. <br>
+                         I secured 68.33% in 12th with 60% in Physics and 67% in Mathematics <br> and then I started my
+                         Graduation from 2018 with <br>
+                         Physics Mains in Trust Fund Degree College, Bargarh. But <br>
+                         after 1 year I dropped out of TF college because of some health problems and <br>
+                         applied for Computer Science Mains in Rajendra Autonomus College,<br> Balangir (Currently known
+                         as Rajendra University) in 2019. I got placed <br>
+                         in 1st selection and currently I'm in my Final Year completing <br>
+                         graduation on Aug-Sep 2022. After 4 semesters my current GPA is 8.55 <br>
+                         out of 10. With Computer Science Honours, in our College, we had <br> Physics and Mathematics
+                         as Electives.
+                         <br><br><br><br>
+
+                    </center>
+                    Technical Skills:
+                    <br><br>
+                    <br><br>
+
+                    C : 65%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="65" aria-valuemax="100" readonly>
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+                    C++ : 55%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="55" aria-valuemax="100">
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+                    Algorithms and Data Structures:70%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="70" aria-valuemax="100">
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+                    Java:60%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="60" aria-valuemax="100">
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+                    Python:40%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="40" aria-valuemax="100">
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+                    Html, CSS, Javascript:75%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="75" aria-valuemax="100">
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+                    Mathematics and Statistics:70%
+                    <div class="range-wrap">
+                         <input type="range" class="range" value="70" aria-valuemax="100">
+                         <output class="bubble"></output>
+                    </div>
+                    <br>
+
+
+
+
+
+
+
+
+               </h3>
+          </div>
+
+     </div>
+     <div id="works" class="para">
+          <br>
+          <br>
+          <h1
+               style="color: rgba(245, 245, 245, 0.738); padding-left: 3ex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 220%;">
+               <b><strong>Works and Projects </strong></b>
+          </h1>
+          <div class="pic">
+               <h3>
+                    Working Experience:
+                    <br>
+                    I'm currently a Fresher, with no job experience. I'm open for work.
+                    <br><br>
+                    Projects: <br>
+                    I've done our college group project for the final Semester with my colleagues. <br>
+                    The project was named <i><b> Physor</b></i> and was based on making a Basic E-learning model <br>
+                    for students who seek to learn about Physical Science. <br><br>
+                    Other than that I've made some repositories in Github about some <br>
+                    web developing components and starting with github notes. <br>
+                    I'll add further some java, Python, and C projects on my Github handle <br><br>
+                    I've practiced coding in Hackerrank and Leetcode, and have several badges <br>
+                    in Hackerrank Id. <br><br><br>
+                    go to
+                    <a href="https://github.com/Tejasmaya"
+                         style="font-size: 170%; color: whitesmoke ; text-decoration: none;"> GitHub>>></a>
+                    <br><br>
+                    go to
+                    <a href="https://www.hackerrank.com/kanhasitha2"
+                         style="font-size: 170%; color: whitesmoke ; text-decoration: none;"> Hackerrank>>></a>
+                    <br><br>
+
+
+               </h3>
+
+          </div>
+
+
+     </div>
+     <div id="works" class="para">
+          <br>
+          <br>
+          <h1
+               style="color: rgba(245, 245, 245, 0.738); padding-left: 3ex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 220%;">
+               <b><strong>Contact Me </strong></b>
+          </h1>
+          <div class="pic">
+               <h3>
+                    Mob: <i style="text-decoration:  underline ; ">
+                         +91-9178726330 <br>
+                    </i>
+                    Mail: <i style="text-decoration:  underline ;">
+
+                         <a href="mailto:kanhasitha2@gmail.com" style=" color: whitesmoke ; text-decoration: none;">
+                              kanhasitha2@gmail.com</a> <br>
+                    </i>
+                    LinkedIn: <i style="text-decoration:  underline ; ">
+                         <a href="www.linkedin.com/in/tejasmaya-sitha-961942201 "
+                              style=" color: whitesmoke ; text-decoration: none;"> Linkedin.com
+                    </i>
+
+
+               </h3>
+
+          </div>
+
+
+     </div>
+
+
+
+
+     <script>
+          const allRanges = document.querySelectorAll(".range-wrap");
+          allRanges.forEach(wrap => {
+               const range = wrap.querySelector(".range");
+               const bubble = wrap.querySelector(".bubble");
+
+               range.addEventListener("input", () => {
+                    setBubble(range, bubble);
+               });
+               setBubble(range, bubble);
+          });
+
+          function setBubble(range, bubble) {
+               const val = range.value;
+               const min = range.min ? range.min : 0;
+               const max = range.max ? range.max : 100;
+               const newVal = Number(((val - min) * 100) / (max - min));
+               bubble.innerHTML = val;
+
+               // Sorta magic numbers based on size of the native UI thumb
+               bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+          }
+
+
+
+
+     </script>
+
+</body>
+
+</html>

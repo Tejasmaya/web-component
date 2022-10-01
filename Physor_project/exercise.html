@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="physorLogo.jpg" type="image/x-icon">
+     <title>Exercise</title>
+
+
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+     <!-- <link rel="stylesheet" href="assets/parallax/jarallax.css"> -->
+     <link rel="stylesheet" href="assets/dropdown/css/style.css">
+     <link rel="stylesheet" href="assets/socicon/css/styles.css">
+     <!-- <link rel="stylesheet" href="assets/theme/css/style.css"> -->
+     <link rel="stylesheet" href="physorstyle.css">
+     <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet' ">
+     <!--  -->
+     <!-- <noscript>
+          <link rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+     </noscript> -->
+     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+     <style>
+          body {
+
+               background-color: rgb(220, 217, 253);
+               color: rgb(18, 5, 36);
+
+
+          }
+
+          .dark-mode {
+
+               background-color: rgb(11, 4, 32);
+               color: rgb(255, 255, 255);
+          }
+
+
+
+          #myBtn {
+               display: none;
+               position: fixed;
+               bottom: 20px;
+               right: 30px;
+               z-index: 99;
+               font-size: 18px;
+               border: 2px solid blue;
+               border-radius: 90%;
+
+               outline: none;
+               background-color: red;
+               color: white;
+               cursor: pointer;
+               padding: 15px;
+
+          }
+
+          #myBtn:hover {
+               background-color: #555;
+          }
+     </style>
+
+
+</head>
+
+<body>
+
+
+     <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
+
+          <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+               <div class="container-fluid">
+                    <div class="navbar-brand">
+                         <span class="navbar-logo">
+                              <a href="Landingpage.html">
+                                   <img src="physorLogo.jpg" alt="PHYSOR" style="height: 4.9rem;">
+                              </a>
+                         </span>
+
+                    </div>
+                    <button class="darkmode" id="dark" onclick="myFunction()">Dark mode 🌙</button>
+                    <!-- <button> <a href="exercise.html"> Exercise</a></button> -->
+               </div>
+
+          </nav>
+
+     </section>
+
+     <div class="sidebar " style="padding-top: 6%;">
+
+          <!-- <h2>Subjects</h2> -->
+          <ul>
+               <li>Mechanics </li>
+               <ul>
+                    <li><a href="#kinematics"> Kinematics</a></li>
+                    <li> <a href="#lawsofmotion"> Laws of motion</a></li>
+                    <li> <a href="#work"> Work, Energy and Power</a></li>
+                    <li> <a href="#rotational"> Rotational Motion</a></li>
+                    <li> <a href="#thermodynamics"> Thermodynamics</a></li>
+
+
+               </ul>
+               <li>Electricity </li>
+               <ul>
+                    <li> <a href="#electrostatics"> Electrostatics</a></li>
+                    <li><a href="#current"> Current Electricity</a></li>
+                    <li><a href="#potentialandcapacitance"> Electrostatic Potential and Capacitance </a></li>
+
+
+               </ul>
+               <li>Magnetism </li>
+               <ul>
+                    <li><a href="#movingcharges"> Moving Charges and Magnetism</a></li>
+                    <li><a href="#magnetism"> Matter and Magnetism</a></li>
+               </ul>
+               <li>Electromagnetism </li>
+               <ul>
+                    <li><a href="#electromagneticinduction"> Electromagnetic Induction</a></li>
+                    <li><a href="#ac"> Alternating Current</a></li>
+                    <li><a href="#emwaves"> Electromagnetic waves</a></li>
+               </ul>
+               <li>Optics </li>
+               <ul>
+                    <li><a href="#rayoptics"> Ray Optics</a></li>
+                    <li><a href="#instrument"> Optical Instruments</a></li>
+                    <li><a href="#waveoptic"> Wave Optics</a></li>
+                    <li><a href="#radiation"> Radiation and Matter</a></li>
+               </ul>
+               <li>Atomic Physics </li>
+               <ul>
+                    <li><a href="#atom"> Atoms and Nuclei</a></li>
+               </ul>
+               <li>Astronomy</li>
+               <ul>
+                    <li><a href="#telescope"> Telescopes</a></li>
+                    <li><a href="#solarsystem"> Exploring the Solar System</a></li>
+                    <li><a href="#gravitation"> Gravitation</a></li>
+               </ul>
+
+          </ul>
+
+
+
+     </div>
+
+     <div class="" style="padding-left: 20px;padding-top: 10%; position: absolute; margin-left: 26%; width: 74%; padding-right:10%; border-radius: 10px;
+     border-spacing: 4px;
+     box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+          inset 5px 5px 10px rgba(255, 255, 255, 0.5),
+          inset 5px 5px 20px rgba(207, 205, 205, 0.2),
+          inset -5px -5px 15px rgba(141, 147, 166, 0.75);">
+
+
+          <div id="kinematics">
+               <h2> Kinematics </h2>
+               <br>
+               <p>
+
+                    In this article, a couple of kinematics practice problems with detailed answers are presented.
+                    The solution of each problem is itself a complete guide to applying the kinematics equations.
+               </p>
+
+               <p>
+               <ol>
+                    <li>Which of the following statement is true if a body moves in a semicircular track whose radius is
+                         R <br>
+                         <ol type="a">
+                              <li>2R is the displacement of the body </li>
+                              <li>πR is the distance travelled by the body </li>
+                              <li>Both (a) and (b) are correct </li>
+                              <li>None of the above </li>
+
+                              Answer: (c) Both (a) and (b) are correct
+                         </ol>
+                    </li>
+                    <li> What does the area under acceleration-time graph represent for any given time interval <br>
+                         <ol type="a">
+                              <li>Final velocity</li>
+                              <li>Distance travelled</li>
+                              <li> Change in the velocity in that time interval</li>
+                              <li> Displacement of the particle</li>
+                         </ol>
+                         Answer: (c) Change in the velocity in that time interval
+
+                    </li>
+
+                    <li> When can we say that the resultant of the two vectors is maximum
+                         <ol type="a">
+                              <li>When the vectors are acting in the opposite direction</li>
+                              <li> Both the vectors are acting in the same direction</li>
+                              <li> When the vectors are at right angles</li>
+                              <li>When the vectors are parallel to each other</li>
+                         </ol>Answer: (b) Both the vectors are acting in the same direction
+                    </li>
+                    <li> The unit of linear acceleration is
+
+                         <ol type="a">
+                              <li> kg-m</li>
+                              <li>m/s</li>
+                              <li>m/s<sup>2</sup> </li>
+                              <li> rad/s<sup>2</sup></li>
+                         </ol>Answer: c
+                    </li>
+                    <li>The angular velocity (in rad/s) of a body rotating at N r.p.m. is
+                         <ol type="a">
+                              <li> π N/60</li>
+                              <li> 2 π N/60</li>
+                              <li> π N/120</li>
+                              <li> π N/180</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>When a particle moves along a straight path, then the particle has
+                         <ol type="a">
+                              <li>tangential acceleration only</li>
+                              <li> centripetal acceleration only</li>
+                              <li>both tangential and centripetal acceleration</li>
+                              <li>none of the mentioned</li>
+                         </ol> Answer: a
+                    </li>
+                    <li>When a particle moves with a uniform velocity along a circular path, then the particle has
+                         <ol type="a">
+                              <li> tangential acceleration only</li>
+                              <li> centripetal acceleration only</li>
+                              <li>both tangential and centripetal acceleration</li>
+                              <li>none of the mentioned</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>When the motion of a body is confined to only one plane, the motion is said to be
+                         <ol type="a">
+                              <li>plane motion</li>
+                              <li> rectilinear motion</li>
+                              <li> curvilinear Motion</li>
+                              <li>none of the mentioned</li>
+                         </ol>Answer: a
+                    </li>
+                    <li> _______________ is the simplest type of motion and is along a straight line path.
+                         <ol type="a">
+                              <li> plane motion</li>
+                              <li> rectilinear motion</li>
+                              <li>curvilinear Motion</li>
+                              <li>none of the mentioned</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>_________________ is the motion along a curved path.
+                         <ol type="a">
+                              <li>plane motion</li>
+                              <li> rectilinear motion</li>
+                              <li>curvilinear Motion</li>
+                              <li>none of the mentioned</li>
+                         </ol>Answer: c
+                    </li>
+               </ol>
+               </p>
+
+          </div>
+          <div id="lawsofmotion">
+               <h2>Laws of motion</h2>
+
+
+
+               <p>
+               <ol>
+                    <li>Which of the following laws of motion is related to inertia?
+                         <ol type="a">
+                              <li>First law</li>
+                              <li>Second Law</li>
+                              <li>Third Law</li>
+                              <li>Fourth Law</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>Which law of Newton helps in finding the force on a body?
+                         <ol type="a">
+                              <li>First law</li>
+                              <li>Second Law</li>
+                              <li>Third Law</li>
+                              <li>Fourth Law</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>Which law of Newton helps in finding the reaction forces on a body?
+                         <ol type="a">
+                              <li>First law</li>
+                              <li>Second Law</li>
+                              <li>Third Law</li>
+                              <li>Fourth Law</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>The second law of motion, in mathematical form can be written as ____
+                         <ol type="a">
+                              <li>F = dp/dt</li>
+                              <li> F = ma</li>
+                              <li> F = v(dm/dt)</li>
+                              <li> F = mv</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>When we walk on a boat in still water, the boat will ______
+                         <ol type="a">
+                              <li>Move ahead</li>
+                              <li> Move backwards</li>
+                              <li>Not move</li>
+                              <li>Move sideways</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>
+                         <ol type="a">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                         </ol>
+                    </li>
+                    <li>Which one of the following is not an example of the third law of motion?
+                         <ol type="a">
+                              <li>Walking</li>
+                              <li>Skiing</li>
+                              <li>Walking on a boat</li>
+                              <li>Cycling
+                              </li>
+                         </ol>Answer: b
+                    </li>
+                    <li>Which of the following is the correct formulation for the second law of motion?
+                         <ol type="a">
+                              <li>F = m(dv/dt)</li>
+                              <li> F = ma</li>
+                              <li> F = v(dm/dt) + ma</li>
+                              <li> F = mv2</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>Unit of force is _____
+                         <ol type="a">
+                              <li>Newton</li>
+                              <li>Pascal</li>
+                              <li>Byte</li>
+                              <li>Gram</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>An example of variable mass system is _____
+                         <ol type="a">
+                              <li>A car moving</li>
+                              <li>A rocket taking off</li>
+                              <li>A bicycle moving</li>
+                              <li>A man walking</li>
+                         </ol>Answer: b
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="work">
+               <h2>Work, Energy and Power</h2>
+               <p>
+               <ol>
+                    <li>The energy possessed by a body by the virtue of its motion is called ______
+                         <ol type="a">
+                              <li>Kinetic energy</li>
+                              <li>Potential energy</li>
+                              <li>Total energy</li>
+                              <li>Motion energy</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>The energy possessed by a body by the virtue of its position is called ______
+                         <ol type="a">
+                              <li>Kinetic energy</li>
+                              <li>Potential energy</li>
+                              <li>Total energy</li>
+                              <li>Position energy</li>
+                         </ol>Answer: b
+                    </li>
+                    <li> Energy is ________
+                         <ol type="a">
+                              <li>Work</li>
+                              <li>The ability to create work</li>
+                              <li>Quantification of work</li>
+                              <li>Force multiplied by displacement</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>Power is ______
+                         <ol type="a">
+                              <li>Rate of doing work</li>
+                              <li>Ability to do work</li>
+                              <li>Rate of energy creation</li>
+                              <li></li>
+                         </ol>Answer: a
+                    </li>
+                    <li>The unit of energy has been named after ______
+
+                         <ol type="a">
+                              <li>James Prescott Joule</li>
+                              <li>John Prescott Joule</li>
+                              <li>Jammie Joule</li>
+                              <li>Jessy Joule</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>
+                         <ol type="a">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                         </ol>
+                    </li>
+                    <li>In which category do potential and kinetic energy fall?
+
+                         <ol type="a">
+                              <li>Mechanical energy
+                              </li>
+                              <li>Electrical energy</li>
+                              <li>magnetic energy</li>
+                              <li>Usual energy</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>How many Ergs are there in 1 Joule?
+
+                         <ol type="a">
+                              <li>10</li>
+                              <li>10<sup>4 </sup></li>
+                              <li>10<sup> 7</sup></li>
+                              <li>10<sup> 9</sup></li>
+                         </ol>
+                    </li>
+                    <li>What is the correct expression for power?
+
+                         <ol type="a">
+                              <li>P = dW/dt</li>
+                              <li>P = F * d
+                              </li>
+                              <li>P = E
+                              </li>
+                              <li>P = dE/dt
+                              </li>
+                         </ol>Answer: a
+                    </li>
+                    <li>What is the correct expression for Work?
+
+                         <ol type="a">
+                              <li>W = F * ds
+                              </li>
+                              <li>W = P/t
+                              </li>
+                              <li>W = E
+                              </li>
+                              <li>W = E/t
+                              </li>
+                         </ol>Answer: a
+
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="rotational">
+               <h2>Rotational Motion</h2>
+               <p>
+               <ol>
+                    <li>A rigid body is rotating about an axis. One force F1 acts on the body such that its vector
+                         passes through the axis of rotation. Another force F2 acts on it such that it is perpendicular
+                         to the axis of rotation and at a point 5cm from the axis. This force F2 is perpendicular to the
+                         radius vector at its point of application. Find the net torque on the body. Let F1 = 10N & F2=
+                         5N.
+
+                         <ol type="a">
+                              <li>0</li>
+                              <li>10.25Nm
+                              </li>
+                              <li>0.25Nm
+                              </li>
+                              <li>10Nm
+                              </li>
+                         </ol> Answer: c
+                    </li>
+                    <li>A ring of radius 7cm is rotating about the central axis perpendicular to its plane. A force acts
+                         on it, tangentially, such that it does a work of 10J in a complete rotation. Find the value of
+                         that force. `
+
+                         <ol type="a">
+                              <li>0.5/7π N
+                              </li>
+                              <li>35π N
+                              </li>
+                              <li>500/7π N
+                              </li>
+                              <li>0.7 N
+                              </li>
+                         </ol>Answer: c
+                    </li>
+                    <li>. A disc of radius 10cm is rotating about the central axis perpendicular to its plane. A force
+                         of 5N acts on it tangentially. The disc was initially at rest. Calculate the value of power
+                         supplied by the force when the disc has rotated by 30°.The mass of the disc is 2kg.
+
+                         <ol type="a">
+                              <li>1.28W</li>
+                              <li>1.8W</li>
+                              <li>3.9W</li>
+                              <li>2.63W</li>
+                         </ol>Answer: b
+
+                    </li>
+                    <li>A rod is rotating about one end. If a force F1 acting on the other end produces a torque T &
+                         supplies power P, find the value of force F2 that will produce the same amount of power when it
+                         acts at the midpoint of the rod. Assume that all forces are perpendicular to the axis of
+                         rotation & axis of rod. The rod starts from rest.
+
+                         <ol type="a">
+                              <li>= F1
+                              </li>
+                              <li>> F1
+                              </li>
+                              <li>
+                                   < F1 </li>
+                              <li>No force acting at any other point will produce the same power
+                              </li>
+                         </ol>Answer: b
+                    </li>
+
+                    <li>A flywheel has a mass of 25kg has a radius of 0.2m. What force should be applied tangentially to
+                         the rim of the flywheel
+                         so that it acquires an angular acceleration of 2rad/s<sup>2</sup>?
+
+                         <ol type="a">
+                              <li>2N</li>
+                              <li>5N</li>
+                              <li>3N</li>
+                              <li>1N</li>
+
+                         </ol>Answer: b
+
+
+                    </li>
+                    <li>A torque of 10Nm is applied to a flywheel of mass 1kg and radius of gyration 50cm. What is the
+                         resulting angular acceleration?
+                         <ol type="a">
+                              <li>4rad/<sup>2</sup></li>
+                              <li>2rad/<sup>2</sup></li>
+                              <li>5rad/<sup>2</sup></li>
+                              <li>6rad/<sup>2</sup></li>
+
+                         </ol>Answer: a
+                    </li>
+                    <li>The angular velocity of a planet revolving in an elliptical orbit around the sun increases, when
+                         it comes closer to the sun. This is due to ______________
+                         <ol type="a">
+                              <li>Conservation of momentum</li>
+                              <li>Newton’s second law of motion</li>
+                              <li>Conservation of angular momentum</li>
+                              <li>Law of angular velocity</li>
+                         </ol>Answer: c
+
+                    </li>
+                    <li>An ice skater or a ballet dancer can decrease her angular velocity by folding her arms and
+                         bringing the stretched leg close to the other leg.
+
+                         <ol type="a">
+                              <li>True</li>
+                              <li>False</li>
+
+                         </ol>Answer: b
+                    </li>
+                    <li>The centre of mass of a body should lie inside the body.
+
+                         <ol type="a">
+                              <li>True</li>
+                              <li>False</li>
+                         </ol>
+                    </li>
+                    <li>
+                         <ol type="a">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                         </ol>Answer: b
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="thermodynamics">
+               <h2>Thermodynamics</h2>
+               <p>
+               <ol>
+                    <li>What is thermodynamics?
+
+                         <ol type="a">
+                              <li>study of the relationship between heat and other forms of energy</li>
+                              <li>study of the conversion of chemical energy to other forms of energy</li>
+                              <li>study of the relationship between mechanical energy to other forms of energy</li>
+                              <li>study of the conversion of mechanical energy to other forms of energy</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>Which of the following is a branch of thermodynamics?
+
+                         <ol type="a">
+                              <li>Equilibrium thermodynamics</li>
+                              <li>Classical thermodynamics</li>
+                              <li>Chemical thermodynamics</li>
+                              <li>All of the mentioned</li>
+                         </ol>Answer: d
+
+                    </li>
+                    <li>Which of the following is a thermodynamics law?
+
+                         <ol type="a">
+                              <li>Zeroth law of thermodynamics</li>
+                              <li>Faraday’s Law of thermodynamics</li>
+                              <li>Ideal Gas Law of thermodynamics</li>
+                              <li>Boyle’s Law of thermodynamics</li>
+                         </ol>Answer: c
+
+                    </li>
+                    <li>Heat does not spontaneously flow from a colder body to a hotter one. Which of the following
+                         thermodynamics law states this?
+
+                         <ol type="a">
+                              <li>Zeroth law of thermodynamics</li>
+                              <li>First law of thermodynamics</li>
+                              <li>Second law of thermodynamics</li>
+                              <li>Third law of thermodynamics</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>Which of the following is an application of thermodynamics?
+
+                         <ol type="a">
+                              <li>Refrigerators</li>
+                              <li>Gas compressors</li>
+                              <li>Power plants</li>
+                              <li>All of the mentioned</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>Which of the following is a type of thermodynamic system?
+
+                         <ol type="a">
+                              <li>Open system</li>
+                              <li>Closed system</li>
+                              <li>Thermally isolated system</li>
+                              <li>All of the mentioned
+                              </li>
+                         </ol>Answer: d
+
+                    </li>
+                    <li>Which of the following occurs without a change in the internal energy?
+
+                         <ol type="a">
+                              <li>Isochoric process</li>
+                              <li>Isenthalpic process</li>
+                              <li>Steady-state process</li>
+                              <li>Isenthalpic process</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>Which of the following thermodynamic law gives the concept of enthalpy?
+
+                         <ol type="a">
+                              <li>First law of thermodynamics</li>
+                              <li>Second law of thermodynamics</li>
+                              <li>Third law of thermodynamics</li>
+                              <li>Fourth law of thermodynamics</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>What is the value of the absolute thermodynamic temperature scale?
+
+                         <ol type="a">
+                              <li>3K</li>
+                              <li>0K</li>
+                              <li>1K</li>
+                              <li>4K</li>
+                         </ol>Answer: b
+
+                    </li>
+                    <li>Which of the following follows the Carnot theorem?
+
+                         <ol type="a">
+                              <li>Heat engines</li>
+                              <li>Gas turbine engines</li>
+                              <li>Gas compressors</li>
+                              <li>All of the mentioned</li>
+                         </ol>Answer: d
+
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="electrostatics">
+               <h4> Important Electrostatics Questions with Answers</h4>
+               <p>
+                    1. Define electrostatics.
+                    <br> Electrostatics is the branch of physics that deals with phenomena and properties of stationary
+                    or
+                    slow-moving electric charges.
+
+               </p>
+               <p>
+
+                    2. State Coulomb's Law.
+                    <br> The force of attraction or repulsion between two charged bodies is directly proportional to the
+                    product
+                    of their charges and inversely proportional to the square of the distance between them.
+
+               </p>
+               <p>
+
+                    3. What is the value of the electron (e) charge?
+                    <br>
+                    <br> 1.60217662 * 10^-29
+                    <br> 1.60217662 * 10^-27
+                    <br> 1.60217662 * 10-9
+                    <br> 1.60217662 * 10-19
+                    <br> Answer: 1.60217662 * 10-19
+                    <br> Explanation: The value of electron charge is 1.60217662 * 10^-19.
+               </p>
+
+               <p>
+                    4. Neutral particles contain _____.
+                    <br>
+                    <br> Equal numbers of protons and electrons
+                    <br> More protons than electrons
+                    <br> More electrons than protons
+                    <br> None of the options
+                    <br> Answer: Equal numbers of protons and electrons.
+
+               </p>
+               <p>
+
+                    5. Which of the following is an example of electrostatics?
+                    <br>
+                    <br>a. Shining of star
+                    <br>b. The attraction of paper to a charged scale
+                    <br>c. The explosion of grain silos
+                    <br>d. Option b) and c)
+                    <br> Answer: d) Option b) and c)
+               </p>
+               <p>
+                    6. The electrostatic force is also known as the _____.
+                    <br>
+                    <br> Charge force
+                    <br> Coulomb force
+                    <br> Electron force
+                    <br> None of the option
+                    <br> Answer: Coulomb force
+
+               </p>
+               <p>
+
+                    7. Electric field is a _____.
+                    <br>
+                    <br> Scalar quantity
+                    <br> Vector quantity
+                    <br> Dimensionless quantity
+                    <br> None of the options
+                    <br> Answer: Vector quantity
+                    <br> Explanation: Electric field is a quantity that has both magnitude and direction.
+
+               </p>
+               <p>
+                    8. In Coulomb's law, ε is known as ____._
+                    <br>
+                    <br> Relative permittivity
+                    <br> The permittivity of free space
+                    <br> Absolute permittivity
+                    <br> None of the option
+                    <br> Answer: Absolute permittivity.
+
+                    <br> Explanation: Absolute permittivity is a measure of the electric polarizability of a dielectric.
+
+               </p>
+
+          </div>
+          <div id="current">
+               <h4> Important Current Electricity Questions with Answers</h4>
+
+               <p>
+                    Q.1. In a current carrying conductor the net charge is
+                    <br> (a) 1.6 x 10-19 coulomb
+                    <br> (b) 6.25 x 10-18 coulomb
+                    <br> (c) zero
+                    <br> (d) infinite
+
+                    <br> Answer:
+                    <br> (c)
+                    <br> Explanation: In a current carrying conductor, the net charge is zero.
+               </p>
+               <p>
+                    <br> Q.2. The current which is assumed to be flowing in a circuit from positive terminal to
+                    negative, is
+                    called
+                    <br> (a) direct current
+                    <br> (b) pulsating current
+                    <br> (c) conventional current
+                    <br> (d) alternating current
+
+                    <br> Answer: (c)
+               </p>
+               <p>
+                    Q.3. When no current is passed through a conductor,
+                    <br> (a) the free electrons do not move
+                    <br> (b) the average speed of a free electron over a large period of time is not zero
+                    <br> (c) the average velocity of a free electron over a large period of time is zero
+                    <br> (d) the average of the velocities of all the free electrons at an instant is non zero
+
+
+                    <br> Answer: (d)
+               </p>
+
+               <p>
+                    Q.4. A current passes through a wire of nonuniform cross-section. Which of the following quantities
+                    are
+                    independent of the cross-section?
+                    <br> (a) The charge crossing
+                    <br> (b) Drift velocity
+                    <br> (c) Current density
+                    <br> (d) Free-electron density
+
+                    <br> Answer: (d)
+
+               </p>
+               <p>
+
+                    Q.5. In the equation AB = C, A is the current density, C is the electric field, Then B is
+                    <br> (a) resistivity
+                    <br> (b) conductivity
+                    <br> (c) potential difference
+                    <br> (d) resistance
+
+                    <br> Answer: (a)
+                    <br> Explanation:
+                    <br> J =σE ⇒ Jρ=E
+                    <br> J is current density, E is electric field
+                    <br> so B = ρ = resistivity.
+               </p>
+               <p>
+                    Q.6. Drift velocity of electrons is due to
+                    <br> (a) motion of conduction electrons due to random collisions.
+                    <br> (b) motion of conduction electrons due to electric field E
+                    <br> (c) repulsion to the conduction electrons due to inner electrons of ions.
+                    <br> (d) collision of conduction electrons with each other.
+
+
+                    <br> Answer: (b)
+                    <br> Explanation: Motion of conduction electrons due to random collisions has no preffered direction
+                    and
+                    average to zero. Drift velocity is caused due to motion of conduction electrons due to applied
+                    electric field
+                    E.
+               </p>
+
+               <p>
+                    Q.7. When a potential difference V is applied across a conductor at a temperature T, the drift
+                    velocity of
+                    electrons is proportional to
+                    <br>(a) V
+                    <br>(b) V
+                    <br>(c) T
+                    <br>(d) T
+
+                    <br> Answer: (b)
+               </p>
+
+
+          </div>
+          <div id="potentialandcapacitance">
+               <h4> Important Potential and Capacitance Questions with Answers</h4>
+               <p>
+               <ol>
+                    <li> The process in which a region is made free from any electric field is known as——————-.
+                         <ol type="a">
+                              <li>Electrostatic forcing</li>
+                              <li>
+                                   Electrostatic binding
+                              </li>
+                              <li>
+                                   Electrostatic shielding
+                              </li>
+                              <li>
+                                   None of the options
+                              </li>
+                              Answer: (c) Electrostatic shielding
+                         </ol>
+                    </li>
+                    <li>The formula for electrostatic potential is ———–
+                         <ol type="a">
+                              <li>Electrostatic potential = Work done*charge</li>
+                              <li>Electrostatic potential = Work done/charge
+                              </li>
+                              <li>Electrostatic potential = Work done+charge</li>
+                              <li>Electrostatic potential = Work done-charge</li>
+                              Answer: (b) Electrostatic potential = Work done\charge
+                         </ol>
+                    </li>
+                    <li>
+                         <ol type="a">1 Volt = —————–
+                              <li>1 Coulomb
+                              </li>
+                              <li>1 Newton / 1 Coulomb
+                              </li>
+                              <li>1 Joule / 1 Coulomb</li>
+                              <li>1 Newton / 1 meter
+                              </li>
+                              Answer: (c) 1 Joule \ 1 Coulomb
+                         </ol>
+                    </li>
+                    <li>
+                         <ol type="a">The work done in moving a unit positive test charge over a closed path in an
+                              electric field
+                              is————–.
+                              <li>Always 1</li>
+                              <li>Infinite</li>
+                              <li>Zero
+                              </li>
+                              <li>Negative</li>
+                              Answer (a) Zero
+                         </ol>
+                    </li>
+                    <li>A surface that has the same electrostatic potential at every point on it, is known as———–.
+                         <ol type="a">
+                              <li>Equal-potential surface</li>
+                              <li>Same potential surface</li>
+                              <li>Equi-magnitude surface</li>
+                              <li>Equipotential surface</li>
+                              Answer: (d) Equipotential surface
+                         </ol>
+                    </li>
+                    <li>The work done against electrostatic force gets stored in which form of energy?
+
+                         <ol type="a">
+                              <li>Thermal energy</li>
+                              <li>Kinetic energy</li>
+                              <li>Potential energy</li>
+                              <li>Solar energy</li>
+                              Answer: (c) Potential energy
+                         </ol>
+                    </li>
+                    <li>Dielectrics are ————–
+                         <ol type="a">
+                              <li>Conducting substances</li>
+                              <li>Non-conducting substances
+                              </li>
+                              <li>Semi-conducting substances
+                              </li>
+                              <li>None of the option
+                              </li>
+                              Answer: (b) Non-conducting substances
+                         </ol>
+                    </li>
+                    <li>The electric potential inside a conducting sphere —————–
+                         <ol type="a">
+                              <li>Is zero
+                              </li>
+                              <li>Increases from center to the surface</li>
+                              <li>Decreases from center to the surface</li>
+                              <li>Remains constant from center to the surface</li>
+                              Answer: (d) Remains constant from center to the surface.
+                         </ol>
+                    </li>
+                    <li>The capacity of the parallel plate capacitor increases when
+                         <ol type="a">
+                              <li>area of the plate is decreased</li>
+                              <li>area of the plate is increased</li>
+                              <li>distance between the plates increases</li>
+                              <li>None of the option</li>
+                              Answer: (b) area of the plate is increased
+                         </ol>
+                    </li>
+               </ol>
+               </p>
+
+
+          </div>
+
+
+          <div id="movingcharges">
+               <p>
+               <h2>Moving Charges and Magnetism</h2>
+               <ol>
+                    <li>What torque acts on a 50 turn coil of 200 cm2 area carrying a current of 20 A held with its axis
+                         at right angles to a
+                         uniform magnetic field of 0.2T?
+                         <ol>
+                              <li>8 Nm
+                              </li>
+                              <li>0.8 Nm</li>
+                              <li>4 Nm</li>
+                              <li>0.8 Nm</li>
+                         </ol>Answer: c
+                    </li>
+                    <li>What is the maximum torque on a rectangular coil of area 4 cm × 80 cm of 400 turns, when
+                         carrying a current of 103 A in a magnetic field of 0.2 T?
+                         <ol>
+                              <li>1250 Nm</li>
+                              <li>2560 Nm</li>
+                              <li>3600 Nm</li>
+                              <li>1985 Nm</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>Under which of these conditions, the torque acting on the current carrying loop is minimum?
+                         <ol>
+                              <li> θ = 0</li>
+                              <li>θ = 90</li>
+                              <li>θ = 270</li>
+                              <li>θ = 450</li>
+                         </ol>Answer: a
+                    </li>
+                    <li>Identify the factor on which the torque on a planar current loop does not depend.
+                         <ol>
+                              <li> Current</li>
+                              <li>Strength of magnetic field</li>
+                              <li>Area of the loop</li>
+                              <li>The shape of the loop</li>
+                         </ol>Answer: d
+                    </li>
+                    <li>Give the SI unit of magnetic pole strength.
+                         <ol>
+                              <li>Tm</li>
+                              <li>Am2</li>
+                              <li>Am</li>
+                              <li>Tm2</li>
+                         </ol>Answer: c
+                    </li>
+                    <li> ‘X’ is the product of the pole strength of either magnetic pole and the magnetic length of the
+                         magnetic dipole. Identify X.
+                         <ol>
+                              <li>Magnetic dipole</li>
+                              <li> Magnetic dipole moment</li>
+                              <li>Magnetic pole strength</li>
+                              <li> Magnetic dipole length</li>
+                         </ol>Answer: b
+                    </li>
+                    <li>
+                    <li> Under which of these conditions, the torque acting on the current-carrying loop is minimum?
+                         <ol>
+                              <li> θ = 90o</li>
+                              <li>θ = 0o</li>
+                              <li>θ = 180o</li>
+                              <li>θ = 360o</li>
+                         </ol>Answer: a
+                    </li>
+                    <li> Calculate the torque on a 500 turn rectangular coil of length 20 cm and breadth 10 cm, carrying
+                         a current of 30 A, when placed making an angle of 60o with a magnetic field of 0.5 T?
+                         <ol>
+                              <li>625 Nm</li>
+                              <li>125 Nm</li>
+                              <li>75 Nm
+                              </li>
+                              <li>25 Nm
+                              </li>
+                         </ol>Answer: c
+                    </li>
+                    <li>Give the SI unit of magnetic dipole moment.
+                         <ol>
+                              <li> Am</li>
+                              <li>Am2</li>
+                              <li>Tm2</li>
+                              <li>Tm</li>
+                         </ol>
+                    </li>
+                    <li>Air is an example of ______________.
+                         <ol>
+                              <li>Paramagnetic material</li>
+                              <li>Diamagnetic material</li>
+                              <li>Ferromagnetic material</li>
+                              <li>Antiferromagnetic material</li>
+                         </ol>Answer: c
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="magnetism">
+               <p>
+               <h2>Matter and Magnetism</h2>
+               <ol>
+                    <li>For which of the following is magnetic susceptibility negative?
+                         <ol type="a">
+                              <li>Paramagnetic and Ferromagnetic materials</li>
+                              <li>Paramagnetic Materials only</li>
+                              <li>Ferromagnetic Materials only</li>
+                              <li>Diamagnetic Materials</li>
+                         </ol>Answer: (d) Diamagnetic Materials
+
+                    </li>
+                    <li>Which of the following is the unit of magnetic flux density?
+
+
+                         <ol type="a">
+                              <li>Weber/meter2
+                              </li>
+                              <li>Tesla
+                              </li>
+                              <li>Newton/ampere-metre</li>
+                              <li>All of the above
+                              </li>
+                         </ol>Answer: Tesla
+
+                    </li>
+                    <li>The magnetism of a magnet is due to
+
+
+                         <ol type="a">
+                              <li>earth</li>
+                              <li>cosmic rays
+                              </li>
+                              <li>due to pressure of big magnet inside the earth
+                              </li>
+                              <li>spin motion of electrons
+                              </li>
+                         </ol>Answer: (d) spin motion of electrons
+
+                    </li>
+                    <li>Which of the following materials is the most suitable for making a permanent magnet?
+
+                         <ol type="a">
+                              <li>Soft Iron
+                              </li>
+                              <li>
+                                   Nickel</li>
+                              <li>Copper</li>
+                              <li>Steel
+                              </li>
+                         </ol>Answer: (d) Steel
+
+                    </li>
+                    <li>A sensitive magnetic field instrument can be effectively shielded from the external magnetic
+                         field by placing it inside which of the following materials?
+
+
+                         <ol type="a">
+                              <li>Plastic Material</li>
+                              <li>Teak Wood
+                              </li>
+                              <li>Soft Iron of high permeability
+                              </li>
+                              <li>A metal of high conductivity</li>
+                         </ol>Answer: (c) Soft Iron of high permeability
+
+                    </li>
+                    <li>A long magnet is cut into two parts such that the ratio of their lengths is 2:1. What is the
+                         ratio pole strength of both the section?
+
+
+                         <ol type="a">
+                              <li>1:2
+                              </li>
+                              <li>2:1
+                              </li>
+                              <li>4:1
+                              </li>
+                              <li>Equal</li>
+                         </ol>Answer: (d) Equal
+
+                    </li>
+                    <li>Which of the following statements is true about magnetic field intensity?
+
+                         <ol type="a">
+                              <li>Magnetic field intensity is the number of lines of force crossing per unit volume.
+                              </li>
+                              <li>Magnetic field intensity is the number of lines of force crossing per unit area.
+                              </li>
+                              <li>Magnetic field intensity is the magnetic induction force acting on a unit magnetic
+                                   pole.
+                              </li>
+                              <li>Magnetic field intensity is the magnetic moment per unit volume.
+                              </li>
+                         </ol>Answer (c) Magnetic field intensity is the magnetic induction force acting on a unit
+                         magnetic pole
+                    </li>
+                    <li>What happens to the magnetic needle kept in a non-uniform magnetic field?
+
+
+                         <ol type="a">
+                              <li>It experiences force but not torque
+                              </li>
+                              <li>It experiences torque but not force
+                              </li>
+                              <li>It experiences both force and torque
+                              </li>
+                              <li>It neither experiences force nor torque
+                              </li>
+                         </ol>Answer: (a) It experiences force but not torque
+
+                    </li>
+                    <li>What is the torque acting on the bar magnet of moment M which is placed in a uniform field H
+                         making an angle of 300 with the field?
+
+
+                         <ol type="a">
+                              <li>MH
+                              </li>
+                              <li>MH/2
+                              </li>
+                              <li>MH/3
+                              </li>
+                              <li>MH/4
+                              </li>
+                         </ol>Answer: (b) MH/2
+
+                    </li>
+                    <li>What happens to the magnetic moment if a hole is made at the centre of a bar magnet?
+
+                         <ol type="a">
+                              <li>Decreases</li>
+                              <li>Increases</li>
+                              <li>Not a change
+                              </li>
+                              <li>None of the above
+                              </li>
+                         </ol>Answer: (c) Not a change
+
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="electromagneticinduction">
+               <p>
+               <h2>Electromagnetic Induction</h2>
+               <ol>
+                    <li> Which of the following factors is the induced charge in an electromagnetic induction
+                         independent of?
+
+                         <ol type="a">
+                              <li>Time</li>
+                              <li>Resistance of the coil</li>
+                              <li> Change of flux</li>
+                              <li>None of the above</li>
+                              Answer: (a) Time <br>Explanation: The induced charge in an electromagnetic induction is
+                              independent
+                              of time.
+                         </ol>
+                    </li>
+                    <li> Which of the following states that an emf is induced whenever there is a change in the magnetic
+                         field
+                         linked with electric circuits?
+                         <ol type="a">
+                              <li> Lenz’s Law</li>
+                              <li> Ohm’s Law</li>
+                              <li> Faraday’s Law of Electromagnetic</li>
+                              <li>Induction</li>
+                              Answer: (c) Faraday’s Law of Electromagnetic Induction <br>Explanation: Faraday’s Law of
+                              Electromagnetic Induction states that an emf is induced whenever there is a change in the
+                              magnetic
+                              field linked with the electric circuits
+                              changes.
+                         </ol>
+                    </li>
+                    <li> Which of the following gives the polarity of the induced emf?
+                         <ol type="a">
+                              <li> Biot-Savart Law</li>
+                              <li> Lenz’s Law</li>
+                              <li>Ampere’s circuital Law</li>
+                              <li>Fleming’s right-hand Rule</li>
+
+                              Answer: (b) Lenz’s Law <br>Explanation: Lenz’s Law gives the polarity of the induced emf.
+                         </ol>
+                    </li>
+                    <li>Electrical Inertia is the measure of
+                         <ol type="a">
+                              <li> Self Inductance</li>
+                              <li>Mutual Inductance</li>
+                              <li>Impedance</li>
+                              <li>None of the above</li>
+                              Answer: (a) Self Inductance <br>Explanation: Electrical Inertia is the measure of self
+                              inductance.
+                         </ol>
+                    </li>
+
+                    <li>Which of the following laws is the consequence of the Law of conservation of energy?
+
+                         <ol type="a">
+                              <li> Lenz’s Law</li>
+                              <li> Ohm’s Law</li>
+                              <li> Archimedes Law</li>
+                              <li>All of the above</li>
+                              Answer: (a) Lenz’s Law <br>Explanation: Lenz’s Law is the consequence of the Law of
+                              conservation of
+                              energy.
+                         </ol>
+                    </li>
+                    <li>Which of the following apparatus construction uses electromagnetic induction?
+                         <ol type="a">
+                              <li> Voltmeter</li>
+                              <li>Galvanometer</li>
+                              <li>Generator</li>
+                              <li> Electric Motor</li>
+                              Answer: (c) Generator <br>Explanation: The construction of the generator uses the
+                              principle of
+                              electromagnetic induction.
+                         </ol>
+                    </li>
+                    <li>Which of the following factors is the self inductance associated with a coil is independent of?
+                         <ol type="a">
+                              <li> induced voltage</li>
+                              <li> current</li>
+                              <li>time</li>
+                              <li> coil resistance</li>
+                              Answer: (d) coil resistance <br>Explanation: The self inductance associated with a coil is
+                              independent of coil resistance
+                         </ol>
+                    </li>
+
+                    <li> Which of the following rules is used to identify the direction of the current induced in a wire
+                         moving in
+                         a magnetic field?
+                         <ol type="a">
+                              <li>Ampere’s Rule</li>
+                              <li> Fleming’s Left-Hand Rule</li>
+                              <li>Fleming’s Right-Hand Rule</li>
+                              <li>None of the above</li>
+                              Answer: (b) Fleming’s Left-Hand Rule <br> Explanation: Fleming’s Left Hand Rule is used in
+                              identifying the direction of the current induced in a wire moving in a magnetic field.
+                         </ol>
+                    </li>
+                    <li> Which of the following statements is true?
+                         <ol type="a">
+                              <li>A metal plate can be heated by passing either a direct current or an alternating
+                                   current through
+                                   the plate.</li>
+                              <li>A metal plate can be heated by placing it in a time-invariant magnetic field.</li>
+                              <li> A metal plate can be heated by placing it in a time-variant magnetic field</li>
+                              <li> Both (a) and (c)</li>
+                              Answer: (d) Both (a) and (c) <br>Explanation: A metal plate can be heated by passing
+                              either a direct
+                              current or an alternating current through the plate or placing it in a time-variant
+                              magnetic field.
+
+                         </ol>
+                    </li>
+
+
+
+
+
+                    <li> The induced emf is equal to the coefficient of self-inductance is equal to unity, when the rate
+                         of change
+                         of current is unity.
+                         <ol type="a">
+                              <li>True</li>
+                              <li>False</li>
+
+                              Answer: (a) True
+                              <br> Explanation: The induced emf is equal to the coefficient of self-inductance is equal
+                              to unity,
+                              when the rate of change of current is unity.
+                         </ol>
+                    </li>
+               </ol>
+               </p>
+
+
+
+          </div>
+          <div id="ac">
+               <p>
+               <h2>Alternating Current</h2>
+               <ol>
+                    <li>What is the frequency of the AC Mains in India?
+
+                         <ol type="a">
+                              <li>60 Hz</li>
+                              <li> 50 Hz</li>
+                              <li>40 Hz</li>
+                              <li>30 Hz</li>
+
+                              Answer: (b) 50 Hz
+                              <br> Explanation: The frequency of the AC Mains in India is 50 Hz.
+                         </ol>
+                    </li>
+                    <li>An alternating current can be produced by a
+
+                         <ol type="a">
+                              <li>Choke Coil</li>
+                              <li>Dynamo</li>
+                              <li>Electric Motor</li>
+                              <li>Transformer</li>
+                              Answer: (b) Dynamo
+                              <br> Explanation: An alternating current can be produced by a dynamo.
+                         </ol>
+                    </li>
+                    <li>Which of the following can measure an alternating current?
+
+                         <ol type="a">
+                              <li>Voltmeter</li>
+                              <li>Ammeter</li>
+                              <li>Suspended coil Galvanometer</li>
+                              <li>Moving Coil Galvanometer</li>
+                              Answer: (b) Ammeter
+                              <br> Explanation: Ammeter can measure an alternating current.
+                         </ol>
+                    </li>
+                    <li>Which of the following circuits exhibits maximum power dissipation?
+
+                         <ol type="a">
+                              <li> Pure Inductive Circuit</li>
+                              <li>Pure Capacitive Circuit</li>
+                              <li>Pure Resistive Circuit</li>
+                              <li>None of the above</li>
+                              Answer: (c) Pure Resistive Circuit
+                              <br> Explanation: A pure resistive circuit exhibits maximum power dissipation.
+                         </ol>
+                    </li>
+                    <li>What happens to the inductive reactance when the frequency of the AC supply is increased?
+
+                         <ol type="a">
+                              <li>Increases</li>
+                              <li>Decreases</li>
+                              <li>Remains the same</li>
+                              <li>Decreases inversely</li>
+                              Answer: (a) increases
+                              <br> Explanation: The inductive reactance of the AC supply increases with the frequency of
+                              the AC
+                              supply.
+                         </ol>
+                    </li>
+                    <li>What happens to the quality factor of an LCR circuit if the resistance is increased?
+
+                         <ol type="a">
+                              <li>Increases</li>
+                              <li>Decreases</li>
+                              <li>Remains the same</li>
+                              <li>None of the above</li>
+                              Answer: (b) Decreases
+                              <br> Explanation: The quality factor of an LCR circuit decreases if the resistance of the
+                              circuit is
+                              increased.
+                         </ol>
+                    </li>
+                    <li>Which of the following statements is true about the LCR circuit connected to an AC source at
+                         resonance?
+                         <ol type="a">
+                              <li>R equals the applied voltage.</li>
+                              <li> R is zero</li>
+                              <li>C is zero</li>
+                              <li>L equals the applied Answer: (a) R equals the applied voltage.
+                                   <br> Explanation: At resonance, R equals the applied voltage.voltage
+                              </li>
+
+                         </ol>
+                    </li>
+                    <li>The impedance in the series LCR circuit is minimum at the resonance frequency.
+                         <ol type="a">
+                              <li>True</li>
+                              <li>False</li>
+                              Answer: (a) True
+                              <br> Explanation: The impedance in the series LCR circuit is minimum at the resonance
+                              frequency
+
+                         </ol>
+                    </li>
+                    <li>The power factor is one for which of the following?
+
+                         <ol type="a">
+                              <li> Pure capacitor</li>
+                              <li>Pure inductor</li>
+                              <li> Pure resistor</li>
+                              <li> All of the above</li>
+                              Answer: (c) Pure resistor
+                              <br> Explanation: The power factor is unity for the pure resistor.
+                         </ol>
+                    </li>
+
+               </ol>
+               </p>
+
+
+          </div>
+          <div id="emwaves">
+               <p>
+               <h2>Electromagnetic waves</h2>
+               <ol>
+                    <li>Electromagnetic waves are produced by
+
+                         <ol type="a">
+                              <li> A static charge</li>
+                              <li>An accelerated charge</li>
+                              <li> A moving charge</li>
+                              <li>Charged particles</li>
+                              Answer: (b) An accelerated charge
+                         </ol>
+                    </li>
+                    <li>In electromagnetic waves the phase difference between electric field vector and magnetic field
+                         vector is
+
+                         <ol type="a">
+                              <li>zero</li>
+                              <li>π/2</li>
+                              <li>π</li>
+                              <li>π/3</li>
+
+                              Answer: (a) zero
+                         </ol>
+                    </li>
+                    <li> Which of the following can be used to produce a propagating electromagnetic wave?
+
+                         <ol type="a">
+                              <li>Charge moving at a constant speed</li>
+                              <li>Chargeless particle</li>
+                              <li>Stationary charge</li>
+                              <li> An accelerating charge</li>
+                              Answer: (d) An accelerating charge
+
+                         </ol>
+                    </li>
+                    <li>To which part of the spectrum does EM waves belong if the energy of the wave is of the order of
+                         15 KeV.
+
+                         <ol type="a">
+                              <li>X rays</li>
+                              <li>Infrared rays</li>
+                              <li>Ultraviolet rays</li>
+                              <li>Gamma rays</li>
+                              Answer: (a) X rays
+
+                         </ol>
+                    </li>
+                    <li>The ratio of the amplitude of the magnetic field to the amplitude of the electric field for
+                         electromagnetic wave propagation in a vacuum is equal to
+
+                         <ol type="a">
+                              <li>Unity</li>
+                              <li>Speed of light in vacuum</li>
+                              <li>Reciprocal of the speed of light in vacuum</li>
+                              <li>The ratio of magnetic permeability to electrical susceptibility in a vacuum.</li>
+                              Answer: (c) Reciprocal of the speed of light in vacuum
+
+                         </ol>
+                    </li>
+                    <li>Which properties amount the following is false about electromagnetic waves?
+
+                         <ol type="a">
+                              <li>The energy in an electromagnetic wave is divided equally between electric and magnetic
+                                   vectors.
+                              </li>
+                              <li> Both electric and magnetic field vectors are parallel to each other and perpendicular
+                                   to the
+                                   direction of propagation of the wave.</li>
+                              <li>These waves do not require any material medium for propagation</li>
+                              <li>Both electric and magnetic field vectors attain the maxima and minima at the same
+                                   place and the
+                                   same time</li>
+                              Answer: (b) Both electric and magnetic field vectors are parallel to each other and
+                              perpendicular to
+                              the direction of propagation of the wave.
+
+                         </ol>
+                    </li>
+                    <li>Which of the following rays are not electromagnetic waves?
+
+                         <ol type="a">
+                              <li>Gamma rays</li>
+                              <li>Beta rays</li>
+                              <li> Heat rays</li>
+                              <li> X rays</li>
+                              Answer: (b) Beta rays
+                         </ol>
+                    </li>
+
+                    <li>Which of the following has minimum wavelength?
+                         <ol type="a">
+                              <li>Blue light</li>
+                              <li> γ-rays</li>
+                              <li>infrared rays</li>
+                              <li>microwave</li>
+                              Answer: (b) γ-rays have maximum frequency so minimum wavelength among electromagnetic
+                              waves.
+                         </ol>
+                    </li>
+
+               </ol>
+               </p>
+
+
+          </div>
+          <div id="rayoptics">
+               <p>
+               <h2>Ray Optics</h2>
+               <ol>
+                    <li>Which one of the following materials cannot be used to make a lens?
+                         <ol type="a">
+                              <li>Water</li>
+                              <li>Glass</li>
+                              <li>Plastic </li>
+                              <li>Clay</li>
+                              Ans:-(d)Clay
+                         </ol>
+                    </li>
+                    <li>The image formed by a concave mirror is observed to be virtual, erect and larger than the
+                         object. Where should
+                         be the position of the object?
+                         <ol type="a">.
+                              <li>Between the principal focus and the centre of curvature</li>
+                              <li>At the centre of curvature </li>
+                              <li>Beyond the centre of curvature </li>
+                              <li> Between the pole of the mirror and its principal focus</li>
+                              Ans:-(d) Between the pole of the mirror and its principal focus.
+                         </ol>
+                    </li>
+                    <li>Where should an object be placed in front of a convex lens to get a real image of the size of
+                         the object?
+                         <ol type="a">
+                              <li>At the principal focus of the lens </li>
+                              <li> At twice the focal length </li>
+                              <li>At infinity </li>
+                              <li>Between the optical centre of the lens and its principal focus</li>
+                              Ans:-(b) At twice the focal length
+                         </ol>
+                    </li>
+                    <li>A spherical mirror and a thin spherical lens have each a focal length of –15 cm. The mirror and
+                         the lens are
+                         likely to be
+                         <ol type="a">
+                              <li> both concave</li>
+                              <li>both convex</li>
+                              <li>the mirror is concave and the lens is convex</li>
+                              <li>the mirror is convex, but the lens is concave</li>
+                              Ans:- (a) both concave
+                         </ol>
+                    </li>
+                    <li>No matter how far you stand from a mirror, your image appears erect. The mirror is likely to be
+                         <ol type="a">
+                              <li>only plane</li>
+                              <li>only concave</li>
+                              <li>only convex</li>
+                              <li>either plane or convex.</li>
+                              Ans:-(c) only convex.
+                         </ol>
+                    </li>
+                    <li>Which of the following lenses would you prefer to use while reading small letters found in a
+                         dictionary?
+                         <ol type="a">
+                              <li>A convex lens of focal length 50 cm</li>
+                              <li>A concave lens of focal length 50 cm</li>
+                              <li>A convex lens of focal length 5 cm</li>
+                              <li>A concave lens of focal length 5 cm.</li>
+                              Ans:-(c) A convex lens of focal length 5 cm.
+                         </ol>
+                    </li>
+
+                    <li>Angle of incidence is equal to the angle of reflection.
+                         <ol type="a">
+                              <li>Always</li>
+                              <li>Sometimes</li>
+                              <li>Under special conditions </li>
+                              <li>Never</li>
+                              Ans:-(a)Always
+                         </ol>
+                    </li>
+                    <li>Image formed by a plane mirror is
+                         <ol type="a">
+                              <li>virtual, behind the mirror and enlarged</li>
+                              <li>virtual, behind the mirror and of the same size as the object. </li>
+                              <li>real at the surface of the mirror and enlarged. </li>
+                              <li>real, behind the mirror and of the same size as the object</li>
+                              real, behind the mirror and of the same size as the object
+                         </ol>
+                    </li>
+                    <li>Which mirror is usually used in vehicle for rear view ?
+                         <ol type="a" <li>plane mirror
+                    </li>
+                    <li>concave mirror</li>
+                    <li>convex mirror</li>
+                    <li>either a or b</li>
+                    Ans:-(c)convex mirror
+               </ol>
+               </li>
+               <li>Which mirror is usually used in barber shop ?
+                    <ol type="a">
+                         <li>plane mirror</li>
+                         <li>concave mirror</li>
+                         <li>convex mirror</li>
+                         <li>either a or b</li>
+                         Ans:-concave mirror
+                    </ol>
+               </li>
+               </ol>
+               </p>
+          </div>
+          <div id="instrument">
+               <p>
+               <h2>Optical Instruments</h2>
+               <ol>
+                    <li> A lens which converges a beam of parallel rays to a point is called
+                         <ol type="a">
+                              <li>Diverging (or concave) lens</li>
+                              <li>Converging (or convex) lens</li>
+                              <li>)Plano concave lens</li>
+                              <li>Plano-convex lens</li>
+                              Answer: (b) Converging (or convex) lens
+                         </ol>
+                    </li>
+                    <li>The diameter of a lens is called
+                         <ol type="a">
+                              <li>Focal length</li>
+                              <li>Principle axis</li>
+                              <li>Aperture</li>
+                              <li>Radius of curvature</li>
+                              Anertureswer: (c) Aperture
+                         </ol>
+                    </li>
+                    <li>In going from a denser to rarer medium a ray of light is
+                         <ol type="a">
+                              <li>Undeviated</li>
+                              <li>Bent away from the normal</li>
+                              <li>Bent towards the normal</li>
+                              <li>polarised</li>
+                              Answer: (b) Bent away from the normal
+                         </ol>
+                    </li>
+                    <li>The power of a concave lens is
+                         <ol type="a">
+                              <li>Real</li>
+                              <li>Virtual</li>
+                              <li>Positive</li>
+                              <li>negative</li>
+                              Answer: (d) negative
+                         </ol>
+                    </li>
+                    <li>Magnifying power of a simple microscope
+                         <ol type="a">
+                              <li>Increases with increase in focal length</li>
+                              <li>Increases with the decrease in focal length</li>
+                              <li>No effect with decrease or increase with the focal length</li>
+                              <li>Least distance of distinct vision</li>
+                              Answer: (b) Increases with the decrease in focal length
+                         </ol>
+                    </li>
+                    <li>Magnification of astronomical telescope is
+                         <ol type="a">
+                              <li>)f0 + fe</li>
+                              <li>f0/fe</li>
+                              <li>fe/f0</li>
+                              <li>(1+f0/fe)L/f0</li>
+                              Answer: (b) f0/fe
+                         </ol>
+                    </li>
+                    <li>: The magnifying power of an astronomical telescope is 10 and the focal length of its eye-piece
+                         is 20 cm. The
+                         focal length of its objective will be
+                         <ol type="a">
+                              <li>200 cm</li>
+                              <li>2 cm</li>
+                              <li>0.5 cm</li>
+                              <li>0.5 x 10–2 cm</li>
+                              Answer: (a) 200 cm
+                         </ol>
+                    </li>
+                    <li>The magnifying power of a telescope is 9. When it is adjusted for parallel rays, the distance
+                         between the
+                         objective and the eye-piece is found to be 20 cm. The focal lengths of the lenses are
+                         <ol type="a">
+                              <li>18 cm, 2 cm</li>
+                              <li>11 cm, 9 cm</li>
+                              <li>10 cm, 10 cm</li>
+                              <li>15 cm, 5 cm</li>
+                              Answer: (a) 18 cm, 2 cm
+                         </ol>
+                    </li>
+                    <li>In a compound microscope, magnifying power is 95 and the distance of the object from the
+                         objective lens is 1/38
+                         cm. The focal length of the objective lens ¼ cm. What is the magnification of eyepiece
+                         <ol type="a">
+                              <li>5</li>
+                              <li>10</li>
+                              <li>100</li>
+                              <li>200</li>
+                              Answer: (a) 5
+                         </ol>
+                    </li>
+                    <li>A hypermetropic person having “near point” at a distance of 0.75 m puts on spectacles of power
+                         2.5 D. The “near
+                         point” now is at
+                         <ol type="a">
+                              <li>0.75 m</li>
+                              <li>0.83 m</li>
+                              <li>0.26 cm</li>
+                              <li>0.26 m</li>
+                              Answer: (d) 0.26 m
+                         </ol>
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="waveoptic">
+               <p>
+               <h2>
+
+                    Wave Optics
+               </h2>
+               <ol>
+                    <li>Polarisation phenomenon explains which nature of light?
+                         <ol type="a">
+                              <li>Transverse</li>
+                              <li>longitudinal</li>
+                              <li>Both transverse and longitudinal</li>
+                              <li>Geometrical</li>
+                              Answer: (a) Transverse
+                         </ol>
+                    </li>
+                    <li>A narrow slit is taken and a parallel beam of moving electrons is incident normally on it. At a
+                         larger distance
+                         from the slit, a fluorescent screen is placed. Which of the following statement is true if the
+                         size of the
+                         slit is further narrowed?
+                         <ol type="a">
+                              <li>The diffraction pattern cannot be observed on the screen</li>
+                              <li>The angular width of the central maxima of the diffraction pattern will </li>
+                              <li>The angular width of the central maxima of the diffraction pattern will decrease</li>
+                              <li>The angular width of the central maxima of the diffraction pattern remains the same
+                              </li>
+                              Answer: (c) The angular width of the central maxima of the diffraction pattern will
+                              decrease
+                         </ol>
+                    </li>
+                    <li>How does the diffraction band of blue light look in comparison with the red light?
+                         <ol type="a">
+                              <li>: How does the diffraction band of blue light look in comparison with the red light?
+                              </li>
+                              <li>Diffraction pattern becomes narrower</li>
+                              <li>Diffraction pattern becomes broader</li>
+                              <li>Diffraction pattern disappears</li>
+                              Answer: (b) Diffraction pattern becomes narrower
+                         </ol>
+                    </li>
+                    <li>Two coherent sources of light can be obtained from
+                         <ol type="a">
+                              <li>Two different lamps</li>
+                              <li>Two different lamps but of the same colour</li>
+                              <li>Two different lamps of the same colour and having the same colour</li>
+                              <li>None of these</li>
+                              Answer: (d) None of these
+                         </ol>
+                    </li>
+                    <li>Which of the following phenomenon is not explained by Huygen’s wave theory?
+                         <ol type="a">
+                              <li>Diffraction</li>
+                              <li>Interference</li>
+                              <li>Polarisation</li>
+                              <li>Photoelectric effect</li>
+                              Answer: (d) Photoelectric effect
+                         </ol>
+                    </li>
+                    <li>What is the value of coherent time if L is the coherent length and c is the velocity of light?
+                         <ol type="a">
+                              <li>cL</li>
+                              <li>L/c</li>
+                              <li>c/L</li>
+                              <li>1/Lc</li>
+                              Answer: (b) L/c
+                         </ol>
+                    </li>
+                    <li>The ratio of the amplitude of the two sources producing interference 3 : 5, the ratio of
+                         intensities at maxima
+                         and minima is
+                         <ol type="a">
+                              <li>25:6</li>
+                              <li>5:3</li>
+                              <li>16:1</li>
+                              <li>25:9</li>
+                              Answer: (c) 16:1
+                         </ol>
+                    </li>
+                    <li>The colours on the soap bubble is due to
+                         <ol type="a">
+                              <li>Interference</li>
+                              <li>Polarisation</li>
+                              <li>Diffraction</li>
+                              <li>Reflection</li>
+                              Answer:(a)Interference
+                         </ol>
+                    </li>
+                    <li>Which of the following statements indicates that light waves are transverse?
+                         <ol type="a">
+                              <li>Light waves can be polarised</li>
+                              <li>Light waves can show interference</li>
+                              <li>Light waves undergo diffraction</li>
+                              <li>They travel in the vacuum</li>
+                              Answer: (a) Light waves can be polarised
+                         </ol>
+                    </li>
+                    <li>In Young’s double-slit experiment, the phase difference between the light waves reaching the
+                         third bright
+                         fringe from the central fringe will be (λ=6000 Å)
+                         <ol type="a">
+                              <li>Zero</li>
+                              <li>2π</li>
+                              <li>4π</li>
+                              <li>)6π</li>
+                              Answer: 6π
+                         </ol>
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="radiation">
+               <p>
+               <h2>Radiation and Matter</h2>
+               <ol>
+                    <li>Light of frequency 1.9 times the threshold frequency is incident on a photosensitive material.
+                         If the frequency
+                         is halved and intensity is doubled, the photocurrent becomes
+                         <ol type="a">
+                              <li>doubled</li>
+                              <li>quadrupled</li>
+                              <li>halved</li>
+                              <li>zero</li>
+                              Answer: (d) zero
+                         </ol>
+                    </li>
+                    <li>For a metal having a work function W0, the threshold wavelength is λ. What is the threshold
+                         wavelength for the
+                         metal having work function 2W0?
+                         <ol type="a">
+                              <li>λ/4</li>
+                              <li>λ/2</li>
+                              <li>2λ</li>
+                              <li>d)4λ</li>
+                              Answer: (b) λ/2
+                         </ol>
+                    </li>
+                    <li>Radiation of frequency ν is incident on a photosensitive metal. When the frequency of the
+                         incident radiation is
+                         doubled, what is the maximum kinetic energy of the photoelectrons?
+                         <ol type="a">
+                              <li>4E</li>
+                              <li>2E</li>
+                              <li>E + hν</li>
+                              <li>E – hν</li>
+                              Answer: (c) E + hν
+                         </ol>
+                    </li>
+                    <li>. Calculate the de Broglie wavelength associated with the electron which has a kinetic energy of
+                         5 eV.
+                         <ol type="a">
+                              <li>5.47 Å</li>
+                              <li>2.7 Å</li>
+                              <li>5.9 Å</li>
+                              <li>None of the above</li>
+                              Answer: (a) 5.47 Å
+                         </ol>
+                    </li>
+                    <li>What is the ratio of the de Broglie wavelengths proton and an α particle if they are accelerated
+                         by the same
+                         potential difference?
+                         <ol type="a">
+                              <li>2√2/1</li>
+                              <li>3/2</li>
+                              <li>3√2/1</li>
+                              <li>2/1</li>
+                         </ol>
+                    </li>
+                    <li>. By what factor will the de Broglie wavelength change if the K.E if the free electron is
+                         doubled?
+                         <ol type="a">
+                              <li>1/2</li>
+                              <li>1/√2</li>
+                              <li>2</li>
+                              <li>√2</li>
+                              Answer: (b)1/√2
+                         </ol>
+                    </li>
+                    <li>Who among the follwoing established that electric charges is quantasied ?
+                         <ol type="a">
+                              <li>R.A. Millikan</li>
+                              <li>Whilhelm Rontgen</li>
+                              <li>William Crookes</li>
+                              <li>J.J. Thomson</li>
+                              Answer:(a)R.A. Millikan
+                         </ol>
+                    </li>
+                    <li>By which of the follwoing physical processes can minimum energy required for the electron
+                         emission from the
+                         metal surface be supplied to the free electrons ?
+                         <ol type="a">
+                              <li>Field emission</li>
+                              <li>Thermionic emission</li>
+                              <li>Photoelectric emission</li>
+                              <li>All of the above</li>
+                              Answer:(d)All of the above
+                         </ol>
+                    </li>
+                    <li>Which of the follwoing statements is true regarding the Photoelectric experiment ?
+                         <ol type="a">
+                              <li>The stopping potential increases with the increases in the intensity of incident
+                                   light.</li>
+                              <li>The photocurrent increases with the intensity of light.</li>
+                              <li>The photocurrent increases with the intensity of frequency.</li>
+                              <li>All of the above</li>
+                              Answer:(d)The photocurrent increases with the intensity of light.
+                         </ol>
+                    </li>
+                    <li>If V be the accelerating voltage, then the maximum frequency of continuous x-rays is given by
+                         <ol type="a">
+                              <li>eh/V</li>
+                              <li>hV/e</li>
+                              <li>eV/h</li>
+                              <li>h/eV</li>
+                              Answer:(c)eV/h
+                         </ol>
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="atom">
+               <p>
+               <h2>Atoms and Nuclei</h2>
+               <ol>
+                    <li>What did Rutherford’s alpha particle experiment prove?
+                         <ol type="a">
+                              <li>Electrons</li>
+                              <li>Protons</li>
+                              <li>Neutrons</li>
+                              <li>Nucleus</li>
+                              Answer: (d) Nucleus <br>
+                              Explanation: Rutherford’s alpha particle experiment proved the existence of the nucleus.
+                         </ol>
+                    </li>
+                    <li>Why was Rutherford’s atomic model unstable?
+                         <ol type="a">
+                              <li>Electrons do not remain in orbit.</li>
+                              <li>Nuclei will break down.</li>
+                              <li>The nucleus repels electrons.</li>
+                              <li>Orbiting electrons radiate energy.</li>
+                              Answer: (a) Electrons do not remain in orbit. <br>
+                              Explanation: Rutherford’s atomic model was unstable because electrons remain in orbit.
+                         </ol>
+                    </li>
+                    <li>Balmer series lies in which spectrum?
+                         <ol type="a">
+                              <li>Ultraviolet</li>
+                              <li>Visible</li>
+                              <li>Infrared</li>
+                              <li>Partially Visible</li>
+                              Answer: (b) Visible <br>
+                              Explanation: Balmer series lies in the visible spectrum.
+                         </ol>
+                    </li>
+                    <li>According to the classical theory, the circular path of the electrons is
+                         <ol type="a">
+                              <li>Circular</li>
+                              <li>Parabolic</li>
+                              <li>Spiral</li>
+                              <li>Straight line</li>
+                              Answer: (c) Spiral <br>
+                              Explanation: According to classical theory, the circular path of the electrons is spiral.
+                         </ol>
+                    </li>
+                    <li>Electrons in the atom are held to the nucleus by
+                         <ol type="a">
+                              <li>Nuclear Force</li>
+                              <li>Columb Force</li>
+                              <li>Gravitational Force</li>
+                              <li>Van Der Waal’s Force</li>
+                              Answer: (b) Columb’s Force <br>
+                              Explanation: Electrons in the atom are held to the nucleus by Columb’s Force.
+                         </ol>
+                    </li>
+                    <li>The electrons of Rutherford’s model would be expected to lose energy because
+                         <ol type="a">
+                              <li>They jump on the nucleus</li>
+                              <li>They move randomly</li>
+                              <li>Radiate electromagnetic waves</li>
+                              <li>Escape from the atom</li>
+                              Answer: (c) Radiate electromagnetic waves. <br>
+                              Explanation: The electrons of Rutherford’s model would e expected to lose energy because
+                              they radiate
+                              electromagnetic waves.
+                         </ol>
+                    </li>
+                    <li>Who discovered the first spectral series?
+                         <ol type="a">
+                              <li>Lyman</li>
+                              <li>Balmer</li>
+                              <li>Paschen</li>
+                              <li>Pfund</li>
+                              Answer: (b) Balmer <br>
+                              Explanation: Balmer discovered the first spectral series.
+                         </ol>
+                    </li>
+                    <li>Which of the following did Bohr use to explain his theory?
+                         <ol type="a">
+                              <li>Quantization of angular momentum</li>
+                              <li>Conservation of Quantum frequency</li>
+                              <li>Conservation of Mass</li>
+                              <li>Conservation of Linear Momentum</li>
+                              Answer: (a) Quantization of angular momentum <br>
+                              Explanation: Bohr used the quantization of angular momentum to explain his theory.
+                         </ol>
+                    </li>
+                    <li>Rutherford’s atomic model was unstable because
+                         <ol type="a">
+                              <li>Electrons do not remain in orbit</li>
+                              <li>Nuclei will break down</li>
+                              <li>Electrons are repelled by the nucleus</li>
+                              <li>Orbiting electrons radiate energy</li>
+                              Answer: (a) Electrons do not remain in orbit. <br>
+                              Explanation: Rutherford’s atomic model was unstable because electrons do not remain in
+                              orbit
+                         </ol>
+                    </li>
+                    <li>The first model of the atom was proposed by
+                         <ol type="a">
+                              <li>Neils Bohr</li>
+                              <li>Albert Einstein</li>
+                              <li>J.J Thompson</li>
+                              <li>Ernst Rutherford</li>
+                              Answer: (c) J.J Thompson <br>
+                              Explanation: J. J Thompson proposed the first model of the atom.
+
+                         </ol>
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="telescope">
+               <p>
+               <h2>Telescopes</h2>
+               <ol>
+                    <li>A Galileo telescope has an objective of focal length 100 cm and magnifying power 50. The
+                         distance between the two lenses in normal adjustment will be
+
+                         <ol type="a">
+                              <li>98 cm</li>
+                              <li>100 cm
+                              </li>
+                              <li>150 cm</li>
+                              <li>200 cm</li>
+                         </ol>Ans. (a)
+
+                    </li>
+                    <li>An astronomical telescope has objective and eye-piece lens of powers 0.5 D and 20 D
+                         respectively, its magnifying power will be
+
+                         <ol type="a">
+                              <li>8</li>
+                              <li>20</li>
+                              <li>30</li>
+                              <li>40</li>
+                         </ol>Ans. (d)
+
+
+                    </li>
+                    <li>Who among the following was the main contributor In building and improvising Telescopes.
+
+                         <ol type="a">
+                              <li>Marconi</li>
+                              <li>Edison</li>
+                              <li>Newton</li>
+                              <li>Galileo</li>
+                         </ol>Ans. (d)
+
+
+                    </li>
+                    <li>A Galileo telescope has an objective of focal length and magnifying power 50. The distance
+                         between the two lenses in normal adjustment will be
+
+                         <ol type="a">
+                              <li>96 cm</li>
+                              <li>98 cm</li>
+                              <li> 102 cm</li>
+                              <li>104 cm</li>
+                         </ol>Ans. (b)
+
+
+                    </li>
+                    <li> A telescope has an objective of focal length 50 cm and an eye piece of focal length 5 cm. The
+                         least distance of distinct vision is 25 cm. The telescope is focussed for distinct vision on a
+                         scale 200 cm away. The separation between the objective and the eye-piece is
+                         <ol type="a">
+                              <li>75 cm
+                              </li>
+                              <li>60 cm</li>
+                              <li>71 cm</li>
+                              <li>74 cm</li>
+                         </ol>Ans. (c)
+
+
+                    </li>
+                    <li>The focal lengths of the objective and eye-piece of a telescope are respectively 100 cm and 2
+                         cm. The moon subtends an angle of 0.5o at the eye. If it is looked through the telescope, the
+                         angle subtended by the moon’s image will be
+
+                         <ol type="a">
+                              <li>10o</li>
+                              <li>50o</li>
+                              <li>25o</li>
+                              <li>10o</li>
+                         </ol>Ans. (c)
+
+
+                    </li>
+                    <li> An astronomical telescope of ten-fold angular magnification has a length of 44 cm. The focal
+                         length of the objective is
+                         <ol type="a">
+                              <li>4 cm</li>
+                              <li>40 cm</li>
+                              <li>44 cm</li>
+                              <li>440 cm</li>
+                         </ol>Ans. (b)
+
+
+                    </li>
+                    <li>A Gallilean telescope has objective and eye-piece of focal lengths 200 cm and 2 cm respectively.
+                         The magnifying power of the telescope for normal vision is
+                         <ol type="a">
+                              <li>90</li>
+                              <li>100</li>
+                              <li>108</li>
+                              <li>198</li>
+                         </ol>Ans. (b)
+
+
+                    </li>
+                    <li>The magnifying power of a telescope is 9. When it is adjusted for parallel rays, the distance
+                         between the objective and the eye-piece is found to be 20 cm. The focal length of the two
+                         lenses are
+                         <ol type="a">
+                              <li>18 cm, 2 cm</li>
+                              <li> 11 cm, 9 cm</li>
+                              <li> 10 cm, 10 cm</li>
+                              <li>15 cm, 5 cm</li>
+                         </ol>Ans. (a)
+
+
+                    </li>
+                    <li>Large aperture of telescope are used for
+                         <ol type="a">
+                              <li>Large image</li>
+                              <li>Greater resolution</li>
+                              <li> Reducing lens aberration</li>
+                              <li>Ease of manufacture</li>
+                         </ol>Ans. (b)
+
+
+                    </li>
+               </ol>
+               </p>
+          </div>
+          <div id="solarsystem">
+               <p>
+               <h2> Exploring the Solar System</h2>
+               <ol>
+                    <li>How many planets are there in the Solar System?
+
+
+                         <ol type="a">
+                              <li>9</li>
+                              <li>8</li>
+                              <li>7</li>
+                              <li>10</li>
+                         </ol> Answer: (b) 8
+
+                    </li>
+                    <li>Solar System is located in _____ galaxy.</li>
+                    Answer: Milkyway
+
+                    <li>Which among the following planets is also known as Veiled Planet?
+                    </li>
+                    Answer: Venus
+                    <li>Asteroids are found between the orbits of
+                    </li> Answer: Mars and Jupiter
+
+                    <li>Which is the hottest planet of our solar system?
+                    </li> Answer: Venus
+
+                    <li>Which planet is made up of thick white and yellowish clouds of sulfuric acid?
+                    </li> Answer: Venus
+                    <li>"Hippocamp" is Moon of which planet?
+                    </li> Answer: Neptune
+                    <li>Which Planet has largest number of natural satellites?
+                    </li> Answer: Saturn
+                    <li>Which planet has a near similarity of size and mass like that of the earth?
+                    </li> Answer: Venus
+                    <li>Which planet is called red planet due to its rock Iron Oxides?
+                    </li> Answer: Mars
+               </ol>
+               </p>
+          </div>
+          <div id="gravitation">
+               <p>
+               <h2>Gravitation</h2>
+               <ol>
+                    <li>Value of g at the surface of the earth is 10 m/s2, then the value of 'g' at a height Re, from
+                         the surface of the earth is: (Re is the radius of the earth)
+                    </li> Answer: 2.5 m/s2
+
+                    <li>Escape velocity (ve) of a body depends upon its mass (m) as: (Here M is mass of earth)
+                    </li> Answer: does not depend upon mass of the body
+
+                    <li>The force of attraction between two objects of masses 'M' and 'm' which lie at a distance 'd'
+                         from each other is directly proportional to the-
+                    </li> Answer: Product of the masses of objects M × m
+
+                    <li>The height at which the weight of a body becomes (1/16)th of its weight on the surface of the
+                         earth (radius R) is
+                    </li> Answer: 3 R
+
+                    <li>What is the force required to produce an acceleration of 9.8 m/s2 on a body of weight 9.8N? Take
+                         g = 9.8 m/s2.
+                    </li> Answer: 9.8 N
+
+                    <li>The force that binds the atmosphere around the Earth is the-
+                    </li> Answer: Force of gravity.
+
+                    <li>Once a satellite has been launched into orbit, the only force governing its motion is the force
+                         of ______.
+                    </li> Answer: gravity
+
+                    <li>Consider a heavenly body which has a mass twice that of the earth and a radius thrice that of
+                         the earth. The weight of a book on this heavenly body, if its weight on the earth is 900 N will
+                         be :
+                    </li> Answer: 200 N
+
+                    <li>What would be the acceleration (in m/s²) due to gravity on a planet whose mass is 1/7th the mass
+                         of earth and radius half the radius of earth? (g = 9.8 m/s2)
+                    </li> Answer: 5.6
+
+                    <li>The intensity of the Gravitational field of the Earth is maximum at the_________.
+                    </li> Answer: Poles
+
+               </ol>
+               </p>
+          </div>
+
+
+     </div>
+
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+     <script>
+          //Get the button
+          var mybutton = document.getElementById("myBtn");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () { scrollFunction() };
+
+          function scrollFunction() {
+               if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+               } else {
+                    mybutton.style.display = "none";
+               }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+          }
+     </script>
+     <script>
+
+          function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+
+
+
+               let dark = document.getElementById('dark');
+               if (dark.innerText == "Dark mode 🌙") {
+                    dark.innerText = "Light mode ☀️";
+               }
+               else {
+                    dark.innerText = "Dark mode 🌙";
+               }
+
+
+
+
+          }
+
+
+
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,1397 @@
+<html>
+
+<head>
+     <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+     <meta name=Generator content="Microsoft Word 15 (filtered)">
+     <title>Kinematics</title>
+     <style>
+          <!--
+          /* Font Definitions */
+          @font-face {
+               font-family: Wingdings;
+               panose-1: 5 0 0 0 0 0 0 0 0 0;
+          }
+
+          @font-face {
+               font-family: "Cambria Math";
+               panose-1: 2 4 5 3 5 4 6 3 2 4;
+          }
+
+          @font-face {
+               font-family: Calibri;
+               panose-1: 2 15 5 2 2 2 4 3 2 4;
+          }
+
+          @font-face {
+               font-family: Tahoma;
+               panose-1: 2 11 6 4 3 5 4 4 2 4;
+          }
+
+          /* Style Definitions */
+          p.MsoNormal,
+          li.MsoNormal,
+          div.MsoNormal {
+               margin-top: 0cm;
+               margin-right: 0cm;
+               margin-bottom: 8.0pt;
+               margin-left: 0cm;
+               line-height: 107%;
+               font-size: 11.0pt;
+               font-family: "Calibri", sans-serif;
+          }
+
+          h1 {
+               mso-style-link: "Heading 1 Char";
+               margin-right: 0cm;
+               margin-left: 0cm;
+               font-size: 24.0pt;
+               font-family: "Times New Roman", serif;
+               font-weight: bold;
+          }
+
+          h3 {
+               mso-style-link: "Heading 3 Char";
+               margin-top: 2.0pt;
+               margin-right: 0cm;
+               margin-bottom: 0cm;
+               margin-left: 0cm;
+               line-height: 107%;
+               page-break-after: avoid;
+               font-size: 12.0pt;
+               font-family: "Calibri Light", sans-serif;
+               color: #1F3763;
+               font-weight: normal;
+          }
+
+          a:link,
+          span.MsoHyperlink {
+               color: blue;
+               text-decoration: underline;
+          }
+
+          p {
+               margin-right: 0cm;
+               margin-left: 0cm;
+               font-size: 12.0pt;
+               font-family: "Times New Roman", serif;
+          }
+
+          span.Heading1Char {
+               mso-style-name: "Heading 1 Char";
+               mso-style-link: "Heading 1";
+               font-family: "Times New Roman", serif;
+               font-weight: bold;
+          }
+
+          span.boldred {
+               mso-style-name: boldred;
+          }
+
+          span.Heading3Char {
+               mso-style-name: "Heading 3 Char";
+               mso-style-link: "Heading 3";
+               font-family: "Calibri Light", sans-serif;
+               color: #1F3763;
+          }
+
+          p.boldred1,
+          li.boldred1,
+          div.boldred1 {
+               mso-style-name: boldred1;
+               margin-right: 0cm;
+               margin-left: 0cm;
+               font-size: 12.0pt;
+               font-family: "Times New Roman", serif;
+          }
+
+          span.red {
+               mso-style-name: red;
+          }
+
+          .MsoPapDefault {
+               margin-bottom: 8.0pt;
+               line-height: 107%;
+          }
+
+          @page WordSection1 {
+               size: 595.3pt 841.9pt;
+               margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+          }
+
+          div.WordSection1 {
+               page: WordSection1;
+          }
+
+          /* List Definitions */
+          ol {
+               margin-bottom: 0cm;
+          }
+
+          ul {
+               margin-bottom: 0cm;
+          }
+          -->
+          #myBtn
+          {
+          display:
+          none;
+          position:
+          fixed;
+          bottom:
+          20px;
+          right:
+          30px;
+          z-index:
+          99;
+          font-size:
+          18px;
+          border:
+          2px
+          solid
+          blue;
+          border-radius:
+          90%;
+          outline:
+          none;
+          background-color:
+          red;
+          color:
+          white;
+          cursor:
+          pointer;
+          padding:
+          15px;
+          }
+          #myBtn:hover
+          {
+          background-color:
+          #555;
+          }
+     </style>
+
+</head>
+
+<body lang=EN-IN link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+     <div class=WordSection1>
+
+          <p class=MsoNormal style='margin-top:6.75pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;background:white'><span style='font-size:19.5pt;
+font-family:"Arial",sans-serif;color:#FF3330'>Introduction to Kinematics</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:black'>Kinematics</span></b><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'>&nbsp;is the science of describing the
+                    motion of objects using words, diagrams, numbers, graphs, and equations.
+                    Kinematics is a branch of mechanics. The goal of any study of kinematics is to
+                    develop sophisticated mental models that serve to describe (and ultimately,
+                    explain) the motion of real-world objects</span></p>
+
+          <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+                    style='font-size:12.0pt;font-family:"Times New Roman",serif'>.</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><a name=p3></a><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>In this lesson, we will investigate the words used to describe
+                    the motion of objects. That is, we will focus on the&nbsp;<i>language</i>&nbsp;of
+                    kinematics. The hope is to gain a comfortable foundation with the language that
+                    is used throughout the study of mechanics. We will study such terms as scalars,
+                    vectors, distance, displacement, speed, velocity and acceleration. These words
+                    are used with regularity to describe the motion of objects. Your goal should be
+                    to become very familiar with their meaning</span></p>
+
+          <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+                    style='font-size:12.0pt;font-family:"Times New Roman",serif'>.</span></p>
+
+          <p class=MsoNormal style='margin-top:6.75pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;background:white'><span style='font-size:19.5pt;
+font-family:"Arial",sans-serif;color:#FF3330'>Scalars and Vectors</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>Physics is a mathematical science. The underlying concepts and
+                    principles have a mathematical basis. Throughout the course of our study of
+                    physics, we will encounter a variety of concepts that have a mathematical basis
+                    associated with them. While our emphasis will often be upon the conceptual
+                    nature of physics, we will give considerable and persistent attention to its
+                    mathematical aspect.</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><a name=p2></a><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>The motion of objects can be described by words. Even a person
+                    without a background in physics has a collection of words that can be used to
+                    describe moving objects. Words and phrases such as&nbsp;<i>going
+                         fast</i>,&nbsp;<i>stopped</i>,&nbsp;<i>slowing
+                         down</i>,&nbsp;<i>speeding up</i>, and&nbsp;<i>turning</i>&nbsp;provide a
+                    sufficient vocabulary for describing the motion of objects. In physics, we use
+                    these words and many more. We will be expanding upon this vocabulary list with
+                    words such
+                    as&nbsp;<i>distance</i>,&nbsp;<i>displacement</i>,&nbsp;<i>speed</i>,&nbsp;<i>velocity</i>,
+                    and&nbsp;<i>acceleration</i>. As we will soon see, these words are associated
+                    with mathematical quantities that have strict definitions. The mathematical
+                    quantities that are used to describe the motion of objects can be divided into
+                    two categories. The quantity is either a vector or a scalar. These two
+                    categories can be distinguished from one another by their distinct definitions:</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:red'>Scalars</span></b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>&nbsp;are quantities that are fully described by a magnitude (or
+                    numerical value) alone.</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:red'>Vectors</span></b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>&nbsp;are quantities that are fully described by both a
+                    magnitude and a direction.</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>The remainder of this lesson will focus on several examples of
+                    vector and scalar quantities (distance, displacement, speed, velocity, and
+                    acceleration). As you proceed through the lesson, give careful attention to the
+                    vector and scalar nature of each quantity. As we proceed through other units at
+                    The Physics Classroom Tutorial and become introduced to new mathematical
+                    quantities, the discussion will often begin by identifying the new quantity as
+                    being either a vector or a scalar.</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>&nbsp;</span></p>
+
+          <h1 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white'><span style='font-size:19.5pt;font-family:"Arial",sans-serif;
+color:#FF3330;font-weight:normal'>Distance and Displacement</span></h1>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>Distance and displacement are two quantities that may seem to
+                    mean the same thing yet have distinctly different definitions and meanings.</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:red'>Distance</span></b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>&nbsp;is a&nbsp;<a href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm"><span
+                              style='color:#FF3330'>scalar quantity</span></a>&nbsp;that refers to &quot;how
+                    much ground an object has covered&quot; during its motion.</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:red'>Displacement</span></b><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'>&nbsp;is a&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm"><span style='color:#FF3330'>vector
+                              quantity</span></a>&nbsp;that refers to &quot;how
+                    far out of place an object is&quot;; it is the object's overall change in
+                    position.</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><a name=teacher></a><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>To test your understanding of this distinction, consider the
+                    motion depicted in the diagram below. A physics teacher walks 4 meters East, 2
+                    meters South, 4 meters West, and finally 2 meters North.</span></p>
+
+          <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+line-height:normal;background:white'><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'><img border=0 width=190 height=113
+                         src="Introduction%20to%20Kinematics_files/image001.gif" style='max-width:100%;
+user-select: auto;border-bottom-style:none;border-bottom-width:medium;
+border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>Even though the physics teacher has walked a total distance of
+                    12 meters, her displacement is 0 meters. During the course of her motion, she
+                    has &quot;covered 12 meters of ground&quot; (distance = 12 m). Yet when she is
+                    finished walking, she is not &quot;out of place&quot; - i.e., there is no
+                    displacement for her motion (displacement = 0 m). Displacement, being a vector
+                    quantity, must give attention to direction. The 4 meters east&nbsp;<i>cancels</i>&nbsp;the
+                    4 meters west; and the 2 meters south&nbsp;<i>cancels</i>&nbsp;the 2 meters
+                    north. Vector quantities such as displacement are&nbsp;<i>direction aware</i>.
+                    Scalar quantities such as distance are ignorant of direction. In determining
+                    the overall distance travelled by the physics teachers, the various directions
+                    of motion can be ignored.</span></p>
+
+          <p class=MsoNormal><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>Now consider another example. The diagram below shows the
+                    position of a cross-country skier at various times. At each of the indicated
+                    times, the skier turns around and reverses the direction of travel. In other
+                    words, the skier moves from A to B to C to D.</span></span></p>
+
+          <p class=MsoNormal><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>As a final example, consider a football coach pacing back and
+                    forth along the sidelines. The diagram below shows several of coach's positions
+                    at various times. At each marked position, the coach makes a &quot;U-turn&quot;
+                    and moves in the opposite direction. In other words, the coach moves from
+                    position A to B to C to D.</span></span></p>
+
+          <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+line-height:normal;background:white'><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'>&nbsp;</span></p>
+
+          <p class=MsoNormal><a name=p5></a><span style='font-size:12.0pt;line-height:
+107%;font-family:"Tahoma",sans-serif;color:#444444;background:white'>To
+                    understand the distinction between distance and displacement, you must know the
+                    definitions. You must also know that a&nbsp;</span><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif'><a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm"><span
+                              style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>vector
+                              quantity</span></a></span><span style='font-size:12.0pt;line-height:107%;
+font-family:"Tahoma",sans-serif;color:#444444;background:white'>&nbsp;such as
+                    displacement is&nbsp;<i>direction-aware</i>&nbsp;and a&nbsp;</span><span
+                    style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'><a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm"><span
+                              style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>scalar
+                              quantity</span></a></span><span style='font-size:12.0pt;line-height:107%;
+font-family:"Tahoma",sans-serif;color:#444444;background:white'>&nbsp;such as
+                    distance is&nbsp;<i>ignorant of direction</i>. When an object changes its
+                    direction of motion, displacement takes this direction change into account;
+                    heading the opposite direction effectively begins to&nbsp;<i>cancel&nbsp;</i>whatever
+                    displacement there once was.</span></p>
+
+          <p class=MsoNormal style='margin-top:6.75pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;background:white'><span style='font-size:19.5pt;
+font-family:"Arial",sans-serif;color:#FF3330'>Speed and Velocity</span></p>
+
+          <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Tahoma",sans-serif;color:#444444;background:white'>&nbsp;</span></p>
+
+          <p class=MsoNormal><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>Just as distance and displacement have distinctly different
+                    meanings (despite their similarities), so do speed and velocity.&nbsp;</span></span><span
+                    class=boldred><b><span style='font-family:"Tahoma",sans-serif;color:red;
+background:white'><span style='user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'>Speed</span></span></b></span><span style='font-family:"Tahoma",sans-serif;
+color:#444444;background:white'><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>&nbsp;is a&nbsp;</span></span><a
+                    href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+                         style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>scalar
+                         quantity</span></a><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>&nbsp;that refers to &quot;how fast an object is
+                         moving.&quot; Speed can be thought of as the rate at which an object covers
+                         distance. A fast-moving object has a high speed and covers a relatively large
+                         distance in a short amount of time. Contrast this to a slow-moving object that
+                         has a low speed; it covers a relatively small amount of distance in the same
+                         amount of time. An object with no movement at all has a zero speed.</span></span></p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white'><strong><span style='font-size:16.0pt;font-family:"Arial",sans-serif;
+color:red;font-weight:normal'>Velocity as a Vector Quantity</span></span></strong></h3>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='user-select: auto'><span class=boldred><b><span
+                                   style='font-family:"Tahoma",sans-serif;color:red'>Velocity</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>&nbsp;is a&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto'><span style='color:#FF3330'>vector quantity</span></a>&nbsp;that
+                    refers to &quot;the rate at which an object changes its position.&quot; Imagine
+                    a person moving rapidly - one step forward and one step back - always returning
+                    to the original starting position. While this might result in a frenzy of
+                    activity, it would result in a zero velocity. Because the person always returns
+                    to the original position, the motion would never result in a change in
+                    position. Since velocity is defined as the rate at which the position changes,
+                    this motion results in zero velocity. If a person in motion wishes to maximize
+                    their velocity, then that person must make every effort to maximize the amount
+                    that they are displaced from their original position. Every step must go into
+                    moving that person further from where he or she started. For certain, the
+                    person should never change directions and begin to return to the starting
+                    position.</span></p>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><a name=dirn style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+0px'></a><span style='font-family:"Tahoma",sans-serif;color:#444444'></span><span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>Velocity is a vector quantity. As such, velocity is&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>direction
+                              aware</span></em>. When evaluating the velocity of an object, one must keep
+                    track of direction. It would not be enough to say that an object has a velocity
+                    of 55 mi/hr. One must include direction information in order to fully describe
+                    the velocity of the object. For instance, you must describe an object's
+                    velocity as being 55 mi/hr,&nbsp;<strong style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>east</span></strong>. This is one of
+                    the essential differences between speed and velocity. Speed is a scalar
+                    quantity and does not&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>keep track of direction</span></em>;
+                    velocity is a vector quantity and is&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>direction aware</span></em>.</span></p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white'><span style='font-size:16.0pt;font-family:"Arial",sans-serif;
+color:red'>Determining the Direction of the Velocity Vector</span></h3>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>The
+                    task of describing the direction of the velocity vector is easy. The direction
+                    of the velocity vector is simply the same as the direction that an object is
+                    moving. It would not matter whether the object is speeding up or slowing down.
+                    If an object is moving rightwards, then its velocity is described as being
+                    rightwards. If an object is moving downwards, then its velocity is described as
+                    being downwards. So an airplane moving towards the west with a speed of 300
+                    mi/hr has a velocity of 300 mi/hr, west. Note that speed has no direction (it
+                    is a scalar) and the velocity at any instant is simply the speed value with a
+                    direction.</span></p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white'><span style='font-size:16.0pt;font-family:"Arial",sans-serif;
+color:red'>Calculating Average Speed and Average Velocity</span></h3>
+
+          <p class=MsoNormal><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>As an object moves, it often undergoes changes in speed. For
+                         example, during an average trip to school, there are many changes in speed. Rather
+                         than the speed-o-meter maintaining a steady reading, the needle constantly
+                         moves up and down to reflect the stopping and starting and the accelerating and
+                         decelerating. One instant, the car may be moving at 50 mi/hr and another
+                         instant, it might be stopped (i.e., 0 mi/hr). Yet during the trip to school the
+                         person might average 32 mi/hr. The average speed during an entire motion can be
+                         thought of as the average of all speedometer readings. If the speedometer
+                         readings could be collected at 1-second intervals (or 0.1-second intervals or
+                         ... ) and then averaged together, the average speed could be determined. Now
+                         that would be a lot of work. And fortunately, there is a shortcut. Read on.</span></span></p>
+
+          <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>The average speed during the course of a motion is often
+                    computed using the following formula:</span></p>
+
+          <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+line-height:normal;background:white'><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'><img border=0 width=236 height=34
+                         src="Introduction%20to%20Kinematics_files/image002.gif" style='max-width:100%;
+user-select: auto;border-bottom-style:none;border-bottom-width:medium;
+border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p class=MsoNormal style='margin-top:26.25pt;margin-right:0cm;margin-bottom:
+6.75pt;margin-left:0cm;line-height:normal;background:white'><span
+                    style='font-size:12.0pt;font-family:"Tahoma",sans-serif;color:#444444'>In
+                    contrast, the average velocity is often computed using this formula</span></p>
+
+          <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+line-height:normal;background:white'><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'><img border=0 width=304 height=37
+                         src="Introduction%20to%20Kinematics_files/image003.gif" style='max-width:100%;
+user-select: auto;border-bottom-style:none;border-bottom-width:medium;
+border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal style='margin-top:26.25pt;margin-right:0cm;margin-bottom:
+6.75pt;margin-left:0cm;line-height:normal;background:white'><b><span
+                         style='font-size:12.0pt;font-family:"Tahoma",sans-serif;color:red'>Q: While on
+                         vacation, Lisa Carr traveled a total distance of 440 miles. Her trip took 8
+                         hours. What was her average speed?</span></b></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>To compute her average speed, we simply divide the distance of
+                    travel by the time of travel.</span></p>
+
+          <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+line-height:normal;background:white'><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'><img border=0 width=213 height=34
+                         src="Introduction%20to%20Kinematics_files/image004.gif" style='max-width:100%;
+user-select: auto;border-bottom-style:none;border-bottom-width:medium;
+border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p class=MsoNormal style='margin-top:26.25pt;margin-right:0cm;margin-bottom:
+6.75pt;margin-left:0cm;line-height:normal;background:white'><span
+                    style='font-size:12.0pt;font-family:"Tahoma",sans-serif;color:#444444'>That was
+                    easy! Lisa Carr averaged a speed of 55 miles per hour. She may not have been
+                    traveling at a constant speed of 55 mi/hr. She undoubtedly, was stopped at some
+                    instant in time (perhaps for a bathroom break or for lunch) and she probably
+                    was going 65 mi/hr at other instants in time. Yet, she averaged a speed of 55
+                    miles per hour. The above formula represents a shortcut method of determining
+                    the average speed of an object.</span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white'><span style='font-size:16.0pt;font-family:"Arial",sans-serif;
+color:red'><br>
+                    Average Speed versus Instantaneous Speed</span></h3>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><img width=113 height=99 src="Introduction%20to%20Kinematics_files/image005.gif" align=right><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>Since a moving object
+                    often changes its speed during its motion, it is common to distinguish between
+                    the average speed and the instantaneous speed. The distinction is as follows.</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><span class=boldred><b><span style='font-family:"Tahoma",sans-serif;
+color:red'><span style='user-select: auto'>Instantaneous Speed</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>&nbsp;- the speed at any
+                    given instant in time.</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><span class=boldred><b><span style='font-family:"Tahoma",sans-serif;
+color:red'><span style='user-select: auto'>Average Speed</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>&nbsp;- the average of
+                    all instantaneous speeds; found simply by a distance/time ratio.</span></p>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>You
+                    might think of the instantaneous speed as the speed that the speedometer reads
+                    at any given instant in time and the average speed as the average of all the
+                    speedometer readings during the course of the trip. Since the task of averaging
+                    speedometer readings would be quite complicated (and maybe even dangerous), the
+                    average speed is more commonly calculated as the distance/time ratio.</span></p>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>Moving
+                    objects don't always travel with erratic and changing speeds. Occasionally, an
+                    object will move at a steady rate with a constant speed. That is, the object
+                    will cover the same distance every regular interval of time. For instance, a
+                    cross-country runner might be running with a constant speed of 6 m/s in a
+                    straight line for several minutes. If her speed is constant, then the distance
+                    traveled every second is the same. The runner would cover a distance of 6
+                    meters every second. If we could measure her position (distance from an
+                    arbitrary starting point) each second, then we would note that the position
+                    would be changing by 6 meters each second. This would be in stark contrast to
+                    an object that is changing its speed. An object with a changing speed would be
+                    moving a different distance each second. The data tables below depict objects
+                    with constant and changing speed.</span></p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=317 height=145
+                         src="Introduction%20to%20Kinematics_files/image006.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'></span><span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>Now let's consider the motion of&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1c.cfm#teacher"
+                         style='transition: color 0.22s ease 0s;user-select: auto'><span style='color:#FF3330'>that
+                              physics teacher</span></a>&nbsp;again. The physics
+                    teacher walks 4 meters East, 2 meters South, 4 meters West, and finally 2
+                    meters North. The entire motion lasted for 24 seconds. Determine the average
+                    speed and the average velocity.</span></p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=190 height=113
+                         src="Introduction%20to%20Kinematics_files/image001.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>The
+                    physics teacher walked a&nbsp;<a href="http://www.physicsclassroom.com/Class/1DKin/U1L1c.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto'><span style='color:#FF3330'>distance</span></a>&nbsp;of 12
+                    meters in 24 seconds; thus, her average speed was 0.50 m/s. However, since her
+                    displacement is 0 meters, her average velocity is 0 m/s. Remember that the&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1c.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto'><span style='color:#FF3330'>displacement</span></a>&nbsp;refers
+                    to the change in position and the velocity is based upon this position change.
+                    In this case of the teacher's motion, there is a position change of 0 meters
+                    and thus an average velocity of 0 m/s.<br style='user-select: auto'>
+                    &nbsp;</span></p>
+
+          <p class=MsoNormal><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>In conclusion, speed and velocity are kinematic quantities
+                    that have distinctly different definitions. Speed, being a&nbsp;</span></span><a
+                    href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+                         style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>scalar
+                         quantity</span></a><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>, is the rate at which an object covers&nbsp;</span></span><a
+                    href="http://www.physicsclassroom.com/Class/1DKin/U1L1c.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+                         style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>distance</span></a><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444;background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>. The average speed is the&nbsp;</span></span><a
+                    href="http://www.physicsclassroom.com/Class/1DKin/U1L1c.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+                         style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>distance</span></a><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444;background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>&nbsp;(a scalar quantity) per time ratio. Speed is&nbsp;</span><em style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;user-select: auto;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif'>ignorant of
+                              direction</span></em><span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>. On the other hand, velocity is a&nbsp;</span></span><a
+                    href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+                         style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>vector
+                         quantity</span></a><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>; it is&nbsp;</span><em style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+user-select: auto;word-spacing:0px'><span style='font-family:"Tahoma",sans-serif'>direction-aware</span></em><span
+                         style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>. Velocity is the rate at which the position changes. The
+                         average velocity is the&nbsp;</span></span><a
+                    href="http://www.physicsclassroom.com/Class/1DKin/U1L1c.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+                         style='font-family:"Tahoma",sans-serif;color:#FF3330;background:white'>displacement</span></a><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444;background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>&nbsp;or position change (a vector quantity) per time ratio.</span></span></p>
+
+          <p class=MsoNormal style='margin-top:6.75pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;background:white'><span style='font-size:19.5pt;
+font-family:"Arial",sans-serif;color:#FF3330'>Acceleration</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>The final mathematical quantity discussed in Lesson 1 is
+                    acceleration. An often confused quantity, acceleration has a meaning much
+                    different than the meaning associated with it by sports announcers and other
+                    individuals. The definition of acceleration is:</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:red'>Acceleration</span></b><span style='font-size:12.0pt;font-family:
+"Tahoma",sans-serif;color:#444444'>&nbsp;is a&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm"><span style='color:#FF3330'>vector
+                              quantity</span></a>&nbsp;that is defined as the
+                    rate at which an object changes its&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L1d.cfm"><span
+                              style='color:#FF3330'>velocity</span></a>. An object is accelerating if it is
+                    changing its velocity.</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><img width=140 height=140 src="Introduction%20to%20Kinematics_files/image007.gif" align=right><a
+                    name=vttable></a><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>Sports announcers will occasionally say that a person is
+                    accelerating if he/she is moving fast. Yet acceleration has nothing to do with
+                    going fast. A person can be moving very fast and still not be accelerating.
+                    Acceleration has to do with changing how fast an object is moving. If an object
+                    is not changing its velocity, then the object is not accelerating. The data at
+                    the right are representative of a northward-moving accelerating object. The
+                    velocity is changing over the course of time. In fact, the velocity is changing
+                    by a constant amount - 10 m/s - in each second of time. Anytime an object's
+                    velocity is changing, the object is said to be accelerating; it has an
+                    acceleration.</span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>&nbsp;</span></p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white;text-rendering: optimizelegibility;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+user-select: auto;word-spacing:0px'><span style='font-size:16.0pt;font-family:
+"Arial",sans-serif;color:red'>The Meaning of Constant Acceleration</span></h3>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>Sometimes
+                    an accelerating object will change its velocity by the same amount each second.
+                    As mentioned in the previous paragraph, the data table above show an object
+                    changing its velocity by 10 m/s in each consecutive second. This is referred to
+                    as a&nbsp;</span><span style='user-select: auto'><span class=boldred><b><span
+                                   style='font-family:"Tahoma",sans-serif;color:red'>constant
+                                   acceleration</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>&nbsp;since the velocity
+                    is changing by a constant amount each second. An object with a constant
+                    acceleration should not be confused with an object with a constant velocity.
+                    Don't be fooled! If an object is changing its velocity -whether by a constant
+                    amount or a varying amount - then it is an accelerating object. And an object
+                    with a constant velocity is not accelerating. The data tables below depict
+                    motions of objects with a constant acceleration and a changing acceleration.
+                    Note that each object has a changing velocity.</span></p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=372 height=201
+                         src="Introduction%20to%20Kinematics_files/image008.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p class=MsoNormal style='user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'>&nbsp;</p>
+
+          <p class=MsoNormal style='margin-top:26.25pt;margin-right:0cm;margin-bottom:
+6.75pt;margin-left:0cm;line-height:normal;background:white'><span
+                    style='font-size:12.0pt;font-family:"Tahoma",sans-serif;color:#444444'>Since
+                    accelerating objects are constantly changing their velocity, one can say that
+                    the distance traveled/time is not a constant value. A falling object for
+                    instance usually accelerates as it falls. If we were to observe the motion of
+                    a&nbsp;</span><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:red'>free-falling object</span></b><span style='font-size:12.0pt;
+font-family:"Tahoma",sans-serif;color:#444444'>&nbsp;(<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L5a.cfm"><span style='color:#FF3330'>free
+                              fall motion</span></a>&nbsp;will be discussed in
+                    detail later), we would observe that the object averages a velocity of
+                    approximately 5 m/s in the first second, approximately 15 m/s in the second
+                    second, approximately 25 m/s in the third second, approximately 35 m/s in the
+                    fourth second, etc. Our free-falling object would be constantly accelerating.
+                    Given these average velocity values during each consecutive 1-second time
+                    interval, we could say that the object would fall 5 meters in the first second,
+                    15 meters in the second second (for a total distance of 20 meters), 25 meters
+                    in the third second (for a total distance of 45 meters), 35 meters in the
+                    fourth second (for a total distance of 80 meters after four seconds). These
+                    numbers are summarized in the table below.<br>
+                    &nbsp;</span></p>
+
+          <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+               style='background:white;border-collapse:collapse'>
+               <tr>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>Time<br>
+                                        Interval</span></b></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>Velocity Change<br>
+                                        During Interval</span></b></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>Ave. Velocity<br>
+                                        During Interval</span></b></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>Distance Traveled<br>
+                                        During Interval</span></b></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>Total Distance Traveled from<br>
+                                        0 s to End of Interval</span></b></p>
+                    </td>
+               </tr>
+               <tr>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>0 � 1.0 s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>0 to ~10 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~5 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~5 m</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~5 m</span></p>
+                    </td>
+               </tr>
+               <tr>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>1.0 � 2.0 s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~10 to 20 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~15 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~15 m</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~20 m</span></p>
+                    </td>
+               </tr>
+               <tr>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>2.0 � 3.0 s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~20 to 30 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~25 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~25 m</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~45 m</span></p>
+                    </td>
+               </tr>
+               <tr>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>3.0 � 4.0 s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~30 to 40 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~35 m/s</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~35 m</span></p>
+                    </td>
+                    <td width=127 style='width:95.25pt;padding:0cm 0cm 0cm 0cm'>
+                         <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+  color:#444444'>~80 m</span></p>
+                    </td>
+               </tr>
+          </table>
+
+          <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>&nbsp;</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><a name=p4></a><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>Note: The ~ symbol as used here means approximately.<br>
+                    &nbsp;</span></p>
+
+          <p class=MsoNormal style='margin-bottom:6.75pt;line-height:normal;background:
+white'><span style='font-size:12.0pt;font-family:"Tahoma",sans-serif;
+color:#444444'>This discussion illustrates that a&nbsp;<a
+                         href="http://www.physicsclassroom.com/Class/1DKin/U1L5a.cfm"><span
+                              style='color:#FF3330'>free-falling object</span></a>&nbsp;that is accelerating
+                    at a constant rate will cover different distances in each consecutive second.
+                    Further analysis of the first and last columns of the data above reveal that
+                    there is a square relationship between the total distance traveled and the time
+                    of travel for an object starting from rest and moving with a constant
+                    acceleration. The total distance traveled is directly proportional to the
+                    square of the time. As such, if an object travels for twice the time, it will
+                    cover four times (2^2) the distance; the total distance traveled after two
+                    seconds is four times the total distance traveled after one second. If an
+                    object travels for three times the time, then it will cover nine times (3^2)
+                    the distance; the distance traveled after three seconds is nine times the
+                    distance traveled after one second. Finally, if an object travels for four
+                    times the time, then it will cover 16 times (4^2) the distance; the distance traveled
+                    after four seconds is 16 times the distance traveled after one second. For
+                    objects with a constant acceleration, the distance of travel is directly
+                    proportional to the square of the time of travel.</span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white'><span style='font-size:16.0pt;font-family:"Arial",sans-serif;
+color:red'>Calculating the Average Acceleration</span></h3>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>The
+                    average acceleration (</span><span style='user-select: auto'><span class=boldred><b><span
+                                   style='font-family:"Tahoma",sans-serif;color:red'>a</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>) of any object over a
+                    given interval of time (</span><span style='user-select: auto'><span class=boldred><b><span
+                                   style='font-family:"Tahoma",sans-serif;color:red'>t</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>) can be calculated using
+                    the equation</span></p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=263 height=38
+                         src="Introduction%20to%20Kinematics_files/image009.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>This
+                    equation can be used to calculate the acceleration of the object whose motion
+                    is depicted by the&nbsp;<a href="http://www.physicsclassroom.com/Class/1DKin/U1L1e.cfm#vttable"
+                         style='transition: color 0.22s ease 0s;user-select: auto'><span
+                              style='color:#FF3330'>velocity-time data table</span></a>&nbsp;above. The
+                    velocity-time data in the table shows that the object has an acceleration of 10
+                    m/s/s. The calculation is shown below.</span></p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=265 height=37
+                         src="Introduction%20to%20Kinematics_files/image010.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><img width=217 height=134 src="Introduction%20to%20Kinematics_files/image011.gif" align=right><a
+                    name=p6 style='transition: color 0.22s ease 0s;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'></a><span style='color:black'></span><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'></span><span style='font-family:"Tahoma",sans-serif;
+color:#444444'>Acceleration values are expressed in units of velocity/time.
+                    Typical acceleration units include the following:</span></p>
+
+          <p class=boldred1 style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;
+margin-left:30.0pt;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><b><span style='font-family:"Tahoma",sans-serif;color:red'>m/s/s<br style='user-select: auto'>
+                         mi/hr/s<br style='user-select: auto'>
+                         km/hr/s<br style='user-select: auto'>
+                         m/s</span></b><b><sup style='user-select: auto'><span style='font-size:9.0pt;
+font-family:"Tahoma",sans-serif;color:red'>2</span></sup></b></p>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><a name=p7 style='transition: color 0.22s ease 0s;user-select: auto;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;widows: 2;
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;
+text-decoration-color: initial;word-spacing:0px'></a><span style='font-family:
+"Tahoma",sans-serif;color:#444444'></span><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>These units may seem a little awkward to a beginning
+                    physics student. Yet they are very reasonable units when you begin to consider
+                    the definition and equation for acceleration. The reason for the units becomes
+                    obvious upon examination of the acceleration equation.</span></p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=95 height=38
+                         src="Introduction%20to%20Kinematics_files/image012.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>Since
+                    acceleration is a velocity change over a time, the units on acceleration are
+                    velocity units divided by time units - thus (m/s)/s or (mi/hr)/s. The (m/s)/s
+                    unit can be mathematically simplified to m/s</span><sup style='user-select: auto'><span
+                         style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#444444'>2</span></sup><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>.</span></p>
+
+          <p align=center style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;
+margin-left:0cm;text-align:center;background:white;user-select: auto;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;widows: 2;
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;
+text-decoration-color: initial;word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;
+color:#444444'>&nbsp;</span></p>
+
+          <h3 style='margin-top:6.75pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;background:white;text-rendering: optimizelegibility;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+user-select: auto;word-spacing:0px'><span style='font-size:16.0pt;font-family:
+"Arial",sans-serif;color:red'>The Direction of the Acceleration Vector</span></h3>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><span style='font-family:"Tahoma",sans-serif;color:#444444'>Since
+                    acceleration is a&nbsp;<a href="http://www.physicsclassroom.com/Class/1DKin/U1L1b.cfm" style='transition: color 0.22s ease 0s;
+user-select: auto'><span style='color:#FF3330'>vector quantity</span></a>, it
+                    has a direction associated with it. The direction of the acceleration vector
+                    depends on two things:</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><span style='font-family:"Tahoma",sans-serif;color:#444444'>whether
+                    the object is speeding up or slowing down</span></p>
+
+          <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.75pt;text-indent:-18.0pt;line-height:13.5pt;background:white'><span
+                    style='font-size:10.0pt;font-family:Symbol;color:#444444'>�<span
+                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span><span style='font-family:"Tahoma",sans-serif;color:#444444'>whether
+                    the object is moving in the + or - direction</span></p>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><img width=152 height=137 src="Introduction%20to%20Kinematics_files/image013.gif" align=right><a
+                    name=thumb style='transition: color 0.22s ease 0s;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'></a><span style='color:black'></span><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'></span><span style='font-family:"Tahoma",sans-serif;
+color:#444444'>The general principle for determining the acceleation&nbsp;is:</span></p>
+
+          <p class=MsoNormal style='background:white'><span style='font-family:"Tahoma",sans-serif;
+color:#444444'>If an object is slowing down, then its acceleration is in the
+                    opposite direction of its motion.</span></p>
+
+          <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><a name=p8 style='transition: color 0.22s ease 0s;user-select: auto;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;widows: 2;
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;
+text-decoration-color: initial;word-spacing:0px'></a><span style='font-family:
+"Tahoma",sans-serif;color:#444444'></span><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>This&nbsp;</span><span class=red><span
+                         style='font-family:"Tahoma",sans-serif;color:red'><span style='user-select: auto'>general
+                              principle</span></span></span><span style='font-family:"Tahoma",sans-serif;
+color:#444444'>&nbsp;can be applied to determine whether the sign of the
+                    acceleration of an object is positive or negative, right or left, up or down,
+                    etc. Consider the two data tables below. In each case, the acceleration of the
+                    object is in the&nbsp;<em style='user-select: auto'><span style='font-family:
+"Tahoma",sans-serif'>positive</span></em>&nbsp;direction. In Example A, the
+                    object is moving in the&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>positive</span></em>&nbsp;direction
+                    (i.e., has a&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>positive</span></em>&nbsp;velocity)
+                    and is speeding up.&nbsp;<lclighter data-id="lgt257553219" data-bundle-id="0"
+                         style="font-family: inherit !important; font-size: inherit !important; color: inherit !important; font-weight: inherit !important; cursor: pointer !important; background-image: linear-gradient(transparent 0%, transparent calc(50% - 4px), rgb(204, 242, 241) calc(50% - 4px), rgb(204, 242, 241) 100%); transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s; background-size: 100% 200%; background-position: initial; user-select: auto;">
+                         When
+                         an object is speeding up, the acceleration is in the same direction as the
+                         velocity</span></p>
+
+          </lclighter>
+
+          <p class=MsoNormal>. Thus, this object has a&nbsp;<span class=boldred><b><span style='color:red'><span
+                                   style='user-select: auto'>positive acceleration</span></span></b></span>.
+               In Example B, the object is moving in the&nbsp;<em style='user-select: auto'><span
+                         style='font-family:"Calibri",sans-serif'>negative</span></em>&nbsp;direction
+               (i.e., has a negative velocity) and is slowing down. According to our&nbsp;<span class=red><span
+                         style='color:red'><span style='user-select: auto'>general
+                              principle</span></span></span>, when an object is slowing down, the
+               acceleration is in the opposite direction as the velocity. Thus, this object
+               also has a&nbsp;<span class=boldred><b><span style='color:red'><span style='user-select: auto'>positive
+                                   acceleration</span></span></b></span>.</p>
+
+          <p class=MsoNormal align=center style='text-align:center;background:white'><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><img border=0 width=351 height=152
+                         src="Introduction%20to%20Kinematics_files/image014.gif" style='max-width:100%;user-select: auto;border-bottom-style:none;border-bottom-width:
+medium;border-left-style:none;border-left-width:medium;border-right-style:none;
+border-right-width:medium;border-top-style:none;border-top-width:medium;
+height:auto;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+vertical-align:middle'></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white;user-select: auto;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'><a name=p9 style='transition: color 0.22s ease 0s;user-select: auto;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;widows: 2;
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;
+text-decoration-color: initial;word-spacing:0px'></a><span style='font-family:
+"Tahoma",sans-serif;color:#444444'></span><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>This same general principle can be applied to the
+                    motion of the objects represented in the two data tables below. In each case,
+                    the acceleration of the object is in the&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>negative</span></em>&nbsp;direction. In
+                    Example C, the object is moving in the&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>positive</span></em>&nbsp;direction
+                    (i.e., has a&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>positive</span></em>&nbsp;velocity)
+                    and is slowing down. According to our&nbsp;</span><span class=red><span
+                         style='font-family:"Tahoma",sans-serif;color:red'><span
+                              style='user-select: auto'>principle</span></span></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>, when an object is
+                    slowing down, the acceleration is in the opposite direction as the velocity.
+                    Thus, this object has a&nbsp;</span><span class=boldred><b><span
+                              style='font-family:"Tahoma",sans-serif;color:red'><span style='user-select: auto'>negative
+                                   acceleration</span></span></b></span><span style='font-family:"Tahoma",sans-serif;
+color:#444444'>. In Example D, the object is moving in the&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>negative</span></em>&nbsp;direction
+                    (i.e., has a&nbsp;<em style='user-select: auto'><span
+                              style='font-family:"Tahoma",sans-serif'>negative</span></em>&nbsp;velocity)
+                    and is speeding up. When an object is speeding up, the acceleration is in the
+                    same direction as the velocity. Thus, this object also has a&nbsp;</span><span
+                    class=boldred><b><span style='font-family:"Tahoma",sans-serif;color:red'><span
+                                   style='user-select: auto'>negative acceleration</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'>.</span></p>
+
+          <p class=MsoNormal><span style='font-family:"Tahoma",sans-serif;color:#444444;
+background:white'>Observe the use of positive and negative as used in the
+                    discussion above (Examples A - D). In physics, the use of positive and negative
+                    always has a physical meaning. It is more than a mere mathematical symbol. As
+                    used here to describe the velocity and the acceleration of a moving object,
+                    positive and negative describe a direction. Both velocity and acceleration are
+                    vector quantities and a full description of the quantity demands the use of a
+                    directional adjective. North, south, east, west, right, left, up and down are
+                    all directional adjectives. Physics often borrows from mathematics and uses the
+                    + and - symbols as directional adjectives. Consistent with the mathematical
+                    convention used on number lines and graphs, positive often means to the right
+                    or up and negative often means to the left or down. So to say that an object
+                    has a negative acceleration as in Examples C and D is to simply say that its
+                    acceleration is to the left or down (or in whatever direction has been defined
+                    as negative). Negative accelerations do not refer acceleration values that are
+                    less than 0. An acceleration of -2 m/s/s is an acceleration with a magnitude of
+                    2 m/s/s that is directed in the negative direction.</span></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444'><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+user-select: auto;word-spacing:0px'>
+                    <span style='background:white'><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>&nbsp;</span></span></span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal style='margin-top:6.75pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;background:white'><span style='font-size:19.5pt;
+font-family:"Arial",sans-serif;color:#FF3330'>Vector Diagrams</span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal><span class=boldred><b><span style='font-family:"Tahoma",sans-serif;
+color:red;background:white'>Vector diagrams</span></span></b></span><span
+                    style='font-family:"Tahoma",sans-serif;color:#444444;background:white'><span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>&nbsp;are diagrams that depict the direction and relative
+                         magnitude of a vector quantity by a vector arrow. Vector diagrams can be used
+                         to describe the velocity of a moving object during its motion. For example, a
+                         vector diagram could be used to represent the motion of a car moving down the
+                         road.</span></span></p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white'><span style='font-family:"Tahoma",sans-serif;color:#444444'>In
+                    a vector diagram, the magnitude of a vector quantity is represented by the size
+                    of the vector arrow. If the size of the arrow in each consecutive frame of the
+                    vector diagram is the same, then the magnitude of that vector is constant. The
+                    diagrams below depict the velocity of a car during its motion. In the top
+                    diagram, the size of the velocity vector is constant, so the diagram is
+                    depicting a motion of constant velocity. In the bottom diagram, the size of the
+                    velocity vector is increasing, so the diagram is depicting a motion with
+                    increasing velocity - i.e.,&nbsp;<a href="http://www.physicsclassroom.com/Class/1DKin/U1L1e.cfm"
+                         style='transition: color 0.22s ease 0s;
+user-select: auto'><span style='color:#FF3330'>an acceleration</span></a>.</span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal><img border=0 width=476 height=193 src="Introduction%20to%20Kinematics_files/image015.gif"
+                    style='max-width:100%;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;widows: 2;
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;
+text-decoration-color: initial;user-select: auto;background-color:white;
+border-bottom-style:none;border-bottom-width:medium;border-left-style:none;
+border-left-width:medium;border-right-style:none;border-right-width:medium;
+border-top-style:none;border-top-width:medium;color:#444444;font-family:latoregular, Tahoma;
+font-size:16px;font-style:normal;font-weight:400;height:auto;letter-spacing:
+normal;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;
+padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;
+text-align:center;text-indent:0px;text-transform:none;vertical-align:middle;
+white-space:normal;word-spacing:0px'></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p style='margin-top:26.25pt;margin-right:0cm;margin-bottom:6.75pt;margin-left:
+0cm;background:white'><span style='font-family:"Tahoma",sans-serif;color:#444444'>Vector
+                    diagrams can be used to represent any vector quantity. In future studies,
+                    vector diagrams will be used to represent a variety of physical quantities such
+                    as acceleration, force, and momentum. Be familiar with the concept of using a
+                    vector arrow to represent the direction and relative size of a quantity. It
+                    will become a very important representation of an object's motion as we proceed
+                    further in our studies of the physics of motion.</span></p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+          <p class=MsoNormal>&nbsp;</p>
+
+
+          <p class=MsoNormal>&nbsp;</p>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          <script>
+               //Get the button
+               var mybutton = document.getElementById("myBtn");
+
+               // When the user scrolls down 20px from the top of the document, show the button
+               window.onscroll = function () { scrollFunction() };
+
+               function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                         mybutton.style.display = "block";
+                    } else {
+                         mybutton.style.display = "none";
+                    }
+               }
+
+               // When the user clicks on the button, scroll to the top of the document
+               function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+               }
+          </script>
+
+     </div>
+
+</body>
+
+</html>
